@@ -11,6 +11,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 M & J Wedding is a blank canvas for your ideas and it makes the block editor your best brush.
 
+Here is a link to the Figma prototype for this site. https://www.figma.com/proto/vexu2ke2W2IDfEE7ZkYtq6/M-J-web?node-id=2%3A3&scaling=min-zoom
 
 == Installation ==
 
