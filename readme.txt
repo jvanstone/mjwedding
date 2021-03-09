@@ -9,7 +9,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-M & J Wedding is a blank canvas for your ideas and it makes the block editor your best brush.
+M & J Wedding is based off of Twenty Twenty One Theme. 
+
+ This theme will be used with...
+  >> Forminator for the FORM in R.S.V.P.
+	>> MyRegisrty iframe in Registry, so guest will not have to leave site. 
 
 Here is a link to the Figma prototype for this site. https://www.figma.com/proto/vexu2ke2W2IDfEE7ZkYtq6/M-J-web?node-id=2%3A3&scaling=min-zoom
 
@@ -83,15 +87,3 @@ https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/
 https://codepen.io/aaroniker/pen/ZEYoxEY Copyright (c) 2020 Aaron Iker
 https://codepen.io/chriscoyier/pen/FtnAa Copyright (c) 2020 Chris Coyier
 License: MIT.
-
-Images
-Art by Berthe Morisot 1841-1895. Public domain.
-https://www.wikiart.org/en/berthe-morisot/playing-in-the-sand
-https://www.wikiart.org/en/berthe-morisot/roses-tremieres-hollyhocks-1884
-https://www.wikiart.org/en/berthe-morisot/young-woman-in-mauve
-https://www.wikiart.org/en/berthe-morisot/in-the-bois-de-boulogne
-https://www.wikiart.org/en/berthe-morisot/daffodils
-https://www.wikiart.org/en/berthe-morisot/self-portrait-1885
-https://www.wikiart.org/en/berthe-morisot/the-garden-at-bougival-1884
-https://www.wikiart.org/en/berthe-morisot/villa-with-orange-trees-nice
-https://www.wikiart.org/en/berthe-morisot/reading
