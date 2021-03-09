@@ -1,5 +1,5 @@
 === M & J Wedding ===
-Contributors: wordpressdotorg
+Contributors: vjstereo, wordpressdotorg
 Requires at least: 5.3
 Tested up to: 5.6
 Requires PHP: 5.6
@@ -11,9 +11,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 M & J Wedding is a blank canvas for your ideas and it makes the block editor your best brush.
 
-With new block patterns, which allow you to create a beautiful layout in a matter of seconds, this theme’s soft colors and eye-catching — yet timeless — design will let your work shine.
-
-Take it for a spin! See how M & J Wedding elevates your portfolio, business website, or personal blog.
 
 == Installation ==
 
@@ -37,7 +34,7 @@ Initial release
 
 == Copyright ==
 
-M & J Wedding WordPress Theme, 2020 WordPress.org
+M & J Wedding WordPress Theme, 2021 Vanstone Online
 M & J Wedding is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
