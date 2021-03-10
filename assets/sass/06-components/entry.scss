@@ -56,11 +56,12 @@ h1.entry-title {
 	// Overwrite iframe embeds that have inline styles.
 	> iframe[style] {
 
-		margin: var(--global--spacing-vertical) 0 !important;
-		max-width: 100% !important;
+		margin: var(--global--spacing-vertical) auto !important;
+		max-width: 90% !important;
 
 		@include media(mobile) {
-			max-width: var(--global--spacing-vertical) !important;
+			max-width: 100% !important;
+			//max-width: var(--global--spacing-vertical) !important;
 		}
 	}
 
@@ -218,23 +219,32 @@ body:not(.single) .site-main > article:last-of-type .entry-footer {
 	}
 }
 
-@include media(desktop) { 
+@include media(tablet) { 
 	
 	main {
-		width: $max_content_width;
+		width: 750px;
 	 }
 }
 
 @include media(mobile) {
 
 	main {
-		width: 90%;
+		//width: 90%;
+		max-width: 750px;
+		padding-left: calc(1 * var(--global--spacing-vertical));
+		padding-right: calc(1 * var(--global--spacing-vertical));
 	}
 }
 
 @include media(mobile-only) {
 
-	main {
-		width: 90%;
+	main > article {
+		width: 100%;
+		padding-left: calc(1 * var(--global--spacing-vertical));
+		padding-right: calc(1 * var(--global--spacing-vertical));
+	}
+
+	main > article.post-2 { 
+		padding: 0 !important;
 	}
 }

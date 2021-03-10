@@ -7,7 +7,7 @@
 	justify-content: space-between;
 	position: absolute;
 	right: 0;
-	padding-top: calc(0.5 * var(--global--spacing-vertical));
+	//padding-top: calc(0.5 * var(--global--spacing-vertical));
 	padding-bottom: calc(0.25 * var(--global--spacing-vertical));
 
 	#primary-mobile-menu {
@@ -383,7 +383,7 @@
 				> a {
 					width: auto;
 					height: auto;
-					//padding-left: var(--primary-nav--padding);
+					//padding-left: calc(2px + var(--primary-nav--padding));
 					//padding-right: var(--primary-nav--padding);
 
 					+ .sub-menu-toggle {
@@ -411,6 +411,7 @@
 			font-family: var(--primary-nav--font-family);
 			font-size: var(--primary-nav--font-size);
 			font-weight: var(--primary-nav--font-weight);
+	
 
 		}
 

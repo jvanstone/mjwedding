@@ -22,8 +22,7 @@ h6,
 
 h1,
 .h1 {
-	//did not use var() wanted main title to be static
-	font-size: 54px;
+	font-size: var(--heading--font-size-h1);
 	letter-spacing: var(--heading--letter-spacing-h1);
 	line-height: var(--heading--line-height-h1);
 }
