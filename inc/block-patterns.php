@@ -6,7 +6,7 @@
  * @link https://developer.wordpress.org/reference/functions/register_block_pattern_category/
  *
  * @package MJWedding
- * @subpackage  Mj_Wedding
+ * @subpackage  mj_wedding
  * @since 1.0.0
  */
 
@@ -17,7 +17,8 @@ if ( function_exists( 'register_block_pattern_category' ) ) {
 
 	register_block_pattern_category(
 		'mjwedding',
-		array( 'label' => esc_html__( 'M & J Wedding', 'mjwedding' ) )
+		array( 
+			'label' => esc_html__( 'M & J Wedding', 'mjwedding' ) )
 	);
 }
 
