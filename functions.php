@@ -199,6 +199,7 @@ if ( ! function_exists( 'mj_wedding_setup' ) ) {
 			'custom-background',
 			array(
 				'default-color' => 'd1e4dd',
+				'default-image'  => get_template_directory_uri() . '/assets/img/mjbackground.png',
 			)
 		);
 
