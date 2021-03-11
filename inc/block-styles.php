@@ -5,7 +5,7 @@
  * @link https://developer.wordpress.org/reference/functions/register_block_style/
  *
  * @package MJWedding
- * @subpackage  MJ_Wedding
+ * @subpackage  Mj_Wedding
  * @since 1.0.0
  */
 
@@ -17,7 +17,7 @@ if ( function_exists( 'register_block_style' ) ) {
 	 *
 	 * @return void
 	 */
-	function mj_wedding_register_block_styles() {
+	function Mj_Wedding_register_block_styles() {
 		// Columns: Overlap.
 		register_block_style(
 			'core/columns',
@@ -108,5 +108,5 @@ if ( function_exists( 'register_block_style' ) ) {
 			)
 		);
 	}
-	add_action( 'init', 'mj_wedding_register_block_styles' );
+	add_action( 'init', 'Mj_Wedding_register_block_styles' );
 }

@@ -3,7 +3,7 @@
  * Displays the post header
  *
  * @package MJWedding
- * @subpackage  MJ_Wedding
+ * @subpackage  Mj_Wedding
  * @since 1.0.0
  */
 
@@ -17,6 +17,6 @@ if ( 'aside' === $post_format || 'status' === $post_format ) {
 <header class="entry-header">
 	<?php
 	the_title( sprintf( '<h2 class="entry-title default-max-width"><a href="%s">', esc_url( get_permalink() ) ), '</a></h2>' );
-	mj_wedding_post_thumbnail();
+	Mj_Wedding_post_thumbnail();
 	?>
 </header><!-- .entry-header -->

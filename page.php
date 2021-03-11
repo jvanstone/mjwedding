@@ -5,7 +5,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
  * @package MJWedding
- * @subpackage  MJ_Wedding
+ * @subpackage  Mj_Wedding
  * @since 1.0.0
  */
 

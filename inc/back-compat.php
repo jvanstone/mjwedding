@@ -7,7 +7,7 @@
  * relies on many newer functions and markup changes introduced in 5.3.
  *
  * @package MJWedding
- * @subpackage  MJ_Wedding
+ * @subpackage  Mj_Wedding
  * @since 1.0.0
  */
 
@@ -18,10 +18,10 @@
  *
  * @return void
  */
-function mj_wedding_switch_theme() {
-	add_action( 'admin_notices', 'mj_wedding_upgrade_notice' );
+function Mj_Wedding_switch_theme() {
+	add_action( 'admin_notices', 'Mj_Wedding_upgrade_notice' );
 }
-add_action( 'after_switch_theme', 'mj_wedding_switch_theme' );
+add_action( 'after_switch_theme', 'Mj_Wedding_switch_theme' );
 
 /**
  * Adds a message for unsuccessful theme switch.
@@ -35,7 +35,7 @@ add_action( 'after_switch_theme', 'mj_wedding_switch_theme' );
  *
  * @return void
  */
-function mj_wedding_upgrade_notice() {
+function Mj_Wedding_upgrade_notice() {
 	echo '<div class="error"><p>';
 	printf(
 		/* translators: %s: WordPress Version. */
@@ -54,7 +54,7 @@ function mj_wedding_upgrade_notice() {
  *
  * @return void
  */
-function mj_wedding_customize() {
+function Mj_Wedding_customize() {
 	wp_die(
 		sprintf(
 			/* translators: %s: WordPress Version. */
@@ -67,7 +67,7 @@ function mj_wedding_customize() {
 		)
 	);
 }
-add_action( 'load-customize.php', 'mj_wedding_customize' );
+add_action( 'load-customize.php', 'Mj_Wedding_customize' );
 
 /**
  * Prevents the Theme Preview from being loaded on WordPress versions prior to 5.3.
@@ -78,7 +78,7 @@ add_action( 'load-customize.php', 'mj_wedding_customize' );
  *
  * @return void
  */
-function mj_wedding_preview() {
+function Mj_Wedding_preview() {
 	if ( isset( $_GET['preview'] ) ) { // phpcs:ignore WordPress.Security.NonceVerification
 		wp_die(
 			sprintf(
@@ -89,4 +89,4 @@ function mj_wedding_preview() {
 		);
 	}
 }
-add_action( 'template_redirect', 'mj_wedding_preview' );
+add_action( 'template_redirect', 'Mj_Wedding_preview' );

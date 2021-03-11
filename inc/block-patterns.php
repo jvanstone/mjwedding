@@ -6,7 +6,7 @@
  * @link https://developer.wordpress.org/reference/functions/register_block_pattern_category/
  *
  * @package MJWedding
- * @subpackage  MJ_Wedding
+ * @subpackage  Mj_Wedding
  * @since 1.0.0
  */
 

@@ -5,7 +5,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package MJWedding
- * @subpackage  MJ_Wedding
+ * @subpackage  Mj_Wedding
  * @since 1.0.0
  */
 
@@ -16,11 +16,11 @@
 	<?php if ( ! is_front_page() ) : ?>
 		<header class="entry-header alignwide">
 			<?php get_template_part( 'template-parts/header/entry-header' ); ?>
-			<?php mj_wedding_post_thumbnail(); ?>
+			<?php Mj_Wedding_post_thumbnail(); ?>
 		</header>
 	<?php elseif ( has_post_thumbnail() ) : ?>
 		<header class="entry-header alignwide">
-			<?php mj_wedding_post_thumbnail(); ?>
+			<?php Mj_Wedding_post_thumbnail(); ?>
 		</header>
 	<?php endif; ?>
 

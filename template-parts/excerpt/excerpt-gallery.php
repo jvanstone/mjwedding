@@ -5,14 +5,14 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package MJWedding
- * @subpackage  MJ_Wedding
+ * @subpackage  Mj_Wedding
  * @since 1.0.0
  */
 
 // Print the 1st gallery found.
 if ( has_block( 'core/gallery', get_the_content() ) ) {
 
-	mj_wedding_print_first_instance_of_block( 'core/gallery', get_the_content() );
+	Mj_Wedding_print_first_instance_of_block( 'core/gallery', get_the_content() );
 }
 
 the_excerpt();

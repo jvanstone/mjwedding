@@ -5,7 +5,7 @@
  * @link https://make.wordpress.org/core/2016/11/30/starter-content-for-themes-in-4-7/
  *
  * @package MJWedding
- * @subpackage  MJ_Wedding
+ * @subpackage  Mj_Wedding
  * @since 1.0.0
  */
 
@@ -18,7 +18,7 @@
  *
  * @return array A filtered array of args for the starter_content.
  */
-function mj_wedding_get_starter_content() {
+function Mj_Wedding_get_starter_content() {
 
 	// Define and register starter content to showcase the theme on new sites.
 	$starter_content = array(
@@ -180,5 +180,5 @@ function mj_wedding_get_starter_content() {
 	 *
 	 * @param array $starter_content Array of starter content.
 	 */
-	return apply_filters( 'mj_wedding_starter_content', $starter_content );
+	return apply_filters( 'Mj_Wedding_starter_content', $starter_content );
 }

@@ -3,7 +3,7 @@
  * Displays the footer widget area.
  *
  * @package MJWedding
- * @subpackage  MJ_Wedding
+ * @subpackage  Mj_Wedding
  * @since 1.0.0
  */
 

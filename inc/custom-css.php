@@ -3,7 +3,7 @@
  * Custom CSS
  *
  * @package MJWedding
- * @subpackage  MJ_Wedding
+ * @subpackage  Mj_Wedding
  * @since 1.0.0
  */
 
@@ -21,7 +21,7 @@
  *
  * @return string
  */
-function mj_wedding_generate_css( $selector, $style, $value, $prefix = '', $suffix = '', $echo = true ) {
+function Mj_Wedding_generate_css( $selector, $style, $value, $prefix = '', $suffix = '', $echo = true ) {
 
 	// Bail early if there is no $selector elements or properties and $value.
 	if ( ! $value || ! $selector ) {
