@@ -3,11 +3,11 @@
  * Custom template tags for this theme
  *
  * @package MJWedding
- * @subpackage  Mj_Wedding
+ * @subpackage  mj_wedding
  * @since 1.0.0
  */
 
-if ( ! function_exists( 'Mj_Wedding_posted_on' ) ) {
+if ( ! function_exists( 'mj_wedding_posted_on' ) ) {
 	/**
 	 * Prints HTML with meta information for the current post-date/time.
 	 *
@@ -15,7 +15,7 @@ if ( ! function_exists( 'Mj_Wedding_posted_on' ) ) {
 	 *
 	 * @return void
 	 */
-	function Mj_Wedding_posted_on() {
+	function mj_wedding_posted_on() {
 		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 
 		$time_string = sprintf(
@@ -33,7 +33,7 @@ if ( ! function_exists( 'Mj_Wedding_posted_on' ) ) {
 	}
 }
 
-if ( ! function_exists( 'Mj_Wedding_posted_by' ) ) {
+if ( ! function_exists( 'mj_wedding_posted_by' ) ) {
 	/**
 	 * Prints HTML with meta information about theme author.
 	 *
@@ -41,7 +41,7 @@ if ( ! function_exists( 'Mj_Wedding_posted_by' ) ) {
 	 *
 	 * @return void
 	 */
-	function Mj_Wedding_posted_by() {
+	function mj_wedding_posted_by() {
 		if ( ! get_the_author_meta( 'description' ) && post_type_supports( get_post_type(), 'author' ) ) {
 			echo '<span class="byline">';
 			printf(
@@ -54,7 +54,7 @@ if ( ! function_exists( 'Mj_Wedding_posted_by' ) ) {
 	}
 }
 
-if ( ! function_exists( 'Mj_Wedding_entry_meta_footer' ) ) {
+if ( ! function_exists( 'mj_wedding_entry_meta_footer' ) ) {
 	/**
 	 * Prints HTML with meta information for the categories, tags and comments.
 	 * Footer entry meta is displayed differently in archives and single posts.
@@ -63,7 +63,7 @@ if ( ! function_exists( 'Mj_Wedding_entry_meta_footer' ) ) {
 	 *
 	 * @return void
 	 */
-	function Mj_Wedding_entry_meta_footer() {
+	function mj_wedding_entry_meta_footer() {
 
 		// Early exit if not a post.
 		if ( 'post' !== get_post_type() ) {
@@ -79,11 +79,11 @@ if ( ! function_exists( 'Mj_Wedding_entry_meta_footer' ) ) {
 
 			$post_format = get_post_format();
 			if ( 'aside' === $post_format || 'status' === $post_format ) {
-				echo '<p><a href="' . esc_url( get_permalink() ) . '">' . Mj_Wedding_continue_reading_text() . '</a></p>'; // phpcs:ignore WordPress.Security.EscapeOutput
+				echo '<p><a href="' . esc_url( get_permalink() ) . '">' . mj_wedding_continue_reading_text() . '</a></p>'; // phpcs:ignore WordPress.Security.EscapeOutput
 			}
 
 			// Posted on.
-			Mj_Wedding_posted_on();
+			mj_wedding_posted_on();
 
 			// Edit post link.
 			edit_post_link(
@@ -125,9 +125,9 @@ if ( ! function_exists( 'Mj_Wedding_entry_meta_footer' ) ) {
 
 			echo '<div class="posted-by">';
 			// Posted on.
-			Mj_Wedding_posted_on();
+			mj_wedding_posted_on();
 			// Posted by.
-			Mj_Wedding_posted_by();
+			mj_wedding_posted_by();
 			// Edit post link.
 			edit_post_link(
 				sprintf(
@@ -169,7 +169,7 @@ if ( ! function_exists( 'Mj_Wedding_entry_meta_footer' ) ) {
 	}
 }
 
-if ( ! function_exists( 'Mj_Wedding_post_thumbnail' ) ) {
+if ( ! function_exists( 'mj_wedding_post_thumbnail' ) ) {
 	/**
 	 * Displays an optional post thumbnail.
 	 *
@@ -180,8 +180,8 @@ if ( ! function_exists( 'Mj_Wedding_post_thumbnail' ) ) {
 	 *
 	 * @return void
 	 */
-	function Mj_Wedding_post_thumbnail() {
-		if ( ! Mj_Wedding_can_show_post_thumbnail() ) {
+	function mj_wedding_post_thumbnail() {
+		if ( ! mj_wedding_can_show_post_thumbnail() ) {
 			return;
 		}
 		?>
@@ -214,7 +214,7 @@ if ( ! function_exists( 'Mj_Wedding_post_thumbnail' ) ) {
 	}
 }
 
-if ( ! function_exists( 'Mj_Wedding_the_posts_navigation' ) ) {
+if ( ! function_exists( 'mj_wedding_the_posts_navigation' ) ) {
 	/**
 	 * Print the next and previous posts navigation.
 	 *
@@ -222,7 +222,7 @@ if ( ! function_exists( 'Mj_Wedding_the_posts_navigation' ) ) {
 	 *
 	 * @return void
 	 */
-	function Mj_Wedding_the_posts_navigation() {
+	function mj_wedding_the_posts_navigation() {
 		$post_type      = get_post_type_object( get_post_type() );
 		$post_type_name = '';
 		if (
@@ -241,7 +241,7 @@ if ( ! function_exists( 'Mj_Wedding_the_posts_navigation' ) ) {
 				'mid_size'           => 0,
 				'prev_text'          => sprintf(
 					'%s <span class="nav-prev-text">%s</span>',
-					is_rtl() ? Mj_Wedding_get_icon_svg( 'ui', 'arrow_right' ) : Mj_Wedding_get_icon_svg( 'ui', 'arrow_left' ),
+					is_rtl() ? mj_wedding_get_icon_svg( 'ui', 'arrow_right' ) : mj_wedding_get_icon_svg( 'ui', 'arrow_left' ),
 					sprintf(
 						/* translators: %s: The post-type name. */
 						esc_html__( 'Newer %s', 'mjwedding' ),
@@ -255,7 +255,7 @@ if ( ! function_exists( 'Mj_Wedding_the_posts_navigation' ) ) {
 						esc_html__( 'Older %s', 'mjwedding' ),
 						'<span class="nav-short">' . esc_html( $post_type_name ) . '</span>'
 					),
-					is_rtl() ? Mj_Wedding_get_icon_svg( 'ui', 'arrow_left' ) : Mj_Wedding_get_icon_svg( 'ui', 'arrow_right' )
+					is_rtl() ? mj_wedding_get_icon_svg( 'ui', 'arrow_left' ) : mj_wedding_get_icon_svg( 'ui', 'arrow_right' )
 				),
 			)
 		);

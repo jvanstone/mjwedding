@@ -7,7 +7,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package MJWedding
- * @subpackage  Mj_Wedding
+ * @subpackage  mj_wedding
  * @since 1.0.0
  */
 

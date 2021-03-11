@@ -5,7 +5,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package MJWedding
- * @subpackage  Mj_Wedding
+ * @subpackage  mj_wedding
  * @since 1.0.0
  */
 
@@ -19,13 +19,13 @@
 			<?php the_title( sprintf( '<h2 class="entry-title default-max-width"><a href="%s">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 		<?php endif; ?>
 
-		<?php Mj_Wedding_post_thumbnail(); ?>
+		<?php mj_wedding_post_thumbnail(); ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
 		<?php
 		the_content(
-			Mj_Wedding_continue_reading_text()
+			mj_wedding_continue_reading_text()
 		);
 
 		wp_link_pages(
@@ -41,6 +41,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer default-max-width">
-		<?php Mj_Wedding_entry_meta_footer(); ?>
+		<?php mj_wedding_entry_meta_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-${ID} -->

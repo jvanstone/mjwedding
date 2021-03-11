@@ -3,7 +3,7 @@
  * The template for displaying author info below posts.
  *
  * @package MJWedding
- * @subpackage  Mj_Wedding
+ * @subpackage  mj_wedding
  * @since 1.0.0
  */
 

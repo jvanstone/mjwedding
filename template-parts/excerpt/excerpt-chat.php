@@ -5,7 +5,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package MJWedding
- * @subpackage  Mj_Wedding
+ * @subpackage  mj_wedding
  * @since 1.0.0
  */
 
@@ -13,7 +13,7 @@
 // Otherwise this is legacy content, so print the excerpt.
 if ( has_block( 'core/paragraph', get_the_content() ) ) {
 
-	Mj_Wedding_print_first_instance_of_block( 'core/paragraph', get_the_content(), 2 );
+	mj_wedding_print_first_instance_of_block( 'core/paragraph', get_the_content(), 2 );
 } else {
 
 	the_excerpt();

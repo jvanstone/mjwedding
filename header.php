@@ -7,7 +7,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package MJWedding
- * @subpackage  Mj_Wedding
+ * @subpackage  mj_wedding
  * @since 1.0.0
  */
 
@@ -24,12 +24,12 @@
 <?php wp_body_open(); ?>
 
 <?php 
-	//change the text backdrop
-	if (is_front_page()) :
-		$style = 'background: url('. get_template_directory_uri() . '/assets/img/FrontPageTextBack.png) center top no-repeat';
-	else :
-		$style = 'background: #FFF3F4;';
-	endif;
+// change the text backdrop.
+if ( is_front_page() ) :
+	$style = 'background: url(' . get_template_directory_uri() . '/assets/img/FrontPageTextBack.png) center top no-repeat';
+else :
+	$style = 'background: #FFF3F4;';
+endif;
 ?>
 
 <div id="page" class="style" >

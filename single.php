@@ -5,7 +5,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
  * @package MJWedding
- * @subpackage  Mj_Wedding
+ * @subpackage  mj_wedding
  * @since 1.0.0
  */
 
@@ -33,8 +33,8 @@ while ( have_posts() ) :
 	}
 
 	// Previous/next post navigation.
-	$mjwedding_next = is_rtl() ? Mj_Wedding_get_icon_svg( 'ui', 'arrow_left' ) : Mj_Wedding_get_icon_svg( 'ui', 'arrow_right' );
-	$mjwedding_prev = is_rtl() ? Mj_Wedding_get_icon_svg( 'ui', 'arrow_right' ) : Mj_Wedding_get_icon_svg( 'ui', 'arrow_left' );
+	$mjwedding_next = is_rtl() ? mj_wedding_get_icon_svg( 'ui', 'arrow_left' ) : mj_wedding_get_icon_svg( 'ui', 'arrow_right' );
+	$mjwedding_prev = is_rtl() ? mj_wedding_get_icon_svg( 'ui', 'arrow_right' ) : mj_wedding_get_icon_svg( 'ui', 'arrow_left' );
 
 	$mjwedding_post_type      = get_post_type_object( get_post_type() );
 	$mjwedding_post_type_name = '';

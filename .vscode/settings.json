@@ -1,3 +1,4 @@
 {
-    "phpCodeSniffer.standard": "Default"
+    "phpCodeSniffer.standard": "Default",
+    "phpcs.standard": "WordPress"
 }
