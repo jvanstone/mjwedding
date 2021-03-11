@@ -12,7 +12,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 M & J Wedding is based off of Twenty Twenty One Theme. 
 
  This theme requires the plug-in:
-  >> Forminator for the FORM for the R.S.V.P.
+  >> Forminator for the FORM for the R.S.V.P. The plugin link is included with the theme
   
   An example is included in the sample page on the code you will be looking for from Myregistry.com
   >> MyRegisrty iframe in Registry, so guest will not have to leave site. 
