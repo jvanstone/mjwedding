@@ -402,17 +402,17 @@ function mj_wedding_scripts() {
 	global $is_IE;
 	if ( $is_IE ) {
 		// If IE 11 or below, use a flattened stylesheet with static values replacing CSS Variables.
-		wp_enqueue_style( 'twenty-twenty-one-style', get_template_directory_uri() . '/assets/css/ie.css', array(), wp_get_theme()->get( 'Version' ) );
+		wp_enqueue_style( 'mj-wedding-style', get_template_directory_uri() . '/assets/css/ie.css', array(), wp_get_theme()->get( 'Version' ) );
 	} else {
 		// If not IE, use the standard stylesheet.
-		wp_enqueue_style( 'twenty-twenty-one-style', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
+		wp_enqueue_style( 'mj-wedding-style', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
 	}
 
 	// RTL styles.
-	wp_style_add_data( 'twenty-twenty-one-style', 'rtl', 'replace' );
+	wp_style_add_data( 'mj-wedding-style', 'rtl', 'replace' );
 
 	// Print styles.
-	wp_enqueue_style( 'twenty-twenty-one-print-style', get_template_directory_uri() . '/assets/css/print.css', array(), wp_get_theme()->get( 'Version' ), 'print' );
+	wp_enqueue_style( 'mj-wedding-print-style', get_template_directory_uri() . '/assets/css/print.css', array(), wp_get_theme()->get( 'Version' ), 'print' );
 
 	// Threaded comment reply styles.
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -420,7 +420,7 @@ function mj_wedding_scripts() {
 	}
 
 	wp_register_script(
-		'twenty-twenty-one-ie11-polyfills',
+		'mj-wedding-ie11-polyfills',
 		get_template_directory_uri() . '/assets/js/polyfills.js',
 		array(),
 		wp_get_theme()->get( 'Version' ),
@@ -430,9 +430,9 @@ function mj_wedding_scripts() {
 	// Main navigation scripts.
 	if ( has_nav_menu( 'primary' ) ) {
 		wp_enqueue_script(
-			'twenty-twenty-one-primary-navigation-script',
+			'mj-wedding-primary-navigation-script',
 			get_template_directory_uri() . '/assets/js/primary-navigation.js',
-			array( 'twenty-twenty-one-ie11-polyfills' ),
+			array( 'mj-wedding-ie11-polyfills' ),
 			wp_get_theme()->get( 'Version' ),
 			true
 		);
@@ -440,9 +440,9 @@ function mj_wedding_scripts() {
 
 	// Responsive embeds script.
 	wp_enqueue_script(
-		'twenty-twenty-one-responsive-embeds-script',
+		'mj-wedding-responsive-embeds-script',
 		get_template_directory_uri() . '/assets/js/responsive-embeds.js',
-		array( 'twenty-twenty-one-ie11-polyfills' ),
+		array( 'mj-wedding-ie11-polyfills' ),
 		wp_get_theme()->get( 'Version' ),
 		true
 	);
@@ -500,16 +500,16 @@ function mj_wedding_non_latin_languages() {
 	$custom_css = mj_wedding_get_non_latin_css( 'front-end' );
 
 	if ( $custom_css ) {
-	wp_add_inline_style( 'twenty-twenty-one-style', $custom_css );
+	wp_add_inline_style( 'mj-wedding-style', $custom_css );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'mj_wedding_non_latin_languages' );
 
 	// SVG Icons class.
-	include get_template_directory() . '/classes/class-twenty-twenty-one-svg-icons.php';
+	include get_template_directory() . '/classes/class-mj-wedding-svg-icons.php';
 
 	// Custom color classes.
-	include get_template_directory() . '/classes/class-twenty-twenty-one-custom-colors.php';
+	include get_template_directory() . '/classes/class-mj-wedding-custom-colors.php';
 	new mj_wedding_Custom_Colors();
 
 	// Enhance the theme by hooking into WordPress.
@@ -522,7 +522,7 @@ add_action( 'wp_enqueue_scripts', 'mj_wedding_non_latin_languages' );
 	include get_template_directory() . '/inc/template-tags.php';
 
 	// Customizer additions.
-	include get_template_directory() . '/classes/class-twenty-twenty-one-customize.php';
+	include get_template_directory() . '/classes/class-mj-wedding-customize.php';
 	new mj_wedding_Customize();
 
 	// Block Patterns.
@@ -532,7 +532,7 @@ add_action( 'wp_enqueue_scripts', 'mj_wedding_non_latin_languages' );
 	include get_template_directory() . '/inc/block-styles.php';
 
 	// Dark Mode.
-	include_once get_template_directory() . '/classes/class-twenty-twenty-one-dark-mode.php';
+	include_once get_template_directory() . '/classes/class-mj-wedding-dark-mode.php';
 	new mj_wedding_Dark_Mode();
 
 /**
