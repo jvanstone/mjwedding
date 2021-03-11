@@ -119,7 +119,7 @@ function mj_wedding_get_starter_content() {
 					<!-- wp:columns -->
 					<div class="wp-block-columns"><!-- wp:column -->
 					<div class="wp-block-column"><!-- wp:paragraph -->
-					<p><a href="https://wordpress.org/support/article/twenty-twenty-one/">' . esc_html_x( 'Read the Theme Documentation', 'Theme starter content', 'mjwedding' ) . '</a></p>
+					<p><a href="https://wordpress.org/support/article/mj_wedding/">' . esc_html_x( 'Read the Theme Documentation', 'Theme starter content', 'mjwedding' ) . '</a></p>
 					<!-- /wp:paragraph --></div>
 					<!-- /wp:column -->
 

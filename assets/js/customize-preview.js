@@ -39,7 +39,7 @@
 			styles = '';
 			// If the stylesheet doesn't exist, create it and append it to <head>.
 			if ( ! stylesheet.length ) {
-				jQuery( '#twenty-twenty-one-style-inline-css' ).after( '<style id="' + stylesheetID + '"></style>' );
+				jQuery( '#mj_wedding-style-inline-css' ).after( '<style id="' + stylesheetID + '"></style>' );
 				stylesheet = jQuery( '#' + stylesheetID );
 			}
 

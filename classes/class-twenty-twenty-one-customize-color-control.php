@@ -22,7 +22,7 @@ class mj_wedding_Customize_Color_Control extends WP_Customize_Color_Control {
 	 *
 	 * @var string
 	 */
-	public $type = 'twenty-twenty-one-color';
+	public $type = 'mj_wedding-color';
 
 	/**
 	 * Colorpicker palette

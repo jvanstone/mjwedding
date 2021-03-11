@@ -22,7 +22,7 @@ class mj_wedding_Customize_Notice_Control extends WP_Customize_Control {
 	 *
 	 * @var string
 	 */
-	public $type = 'twenty-twenty-one-notice';
+	public $type = 'mj_wedding-notice';
 
 	/**
 	 * Renders the control content.
@@ -39,7 +39,7 @@ class mj_wedding_Customize_Notice_Control extends WP_Customize_Control {
 		?>
 		<div class="notice notice-warning">
 			<p><?php esc_html_e( 'To access the Dark Mode settings, select a light background color.', 'mjwedding' ); ?></p>
-			<p><a href="https://wordpress.org/support/article/twenty-twenty-one/">
+			<p><a href="https://wordpress.org/support/article/mj_wedding/">
 				<?php esc_html_e( 'Learn more about Dark Mode.', 'mjwedding' ); ?>
 			</a></p>
 		</div>
