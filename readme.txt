@@ -31,7 +31,7 @@ Here is a link to the Figma prototype for this site. https://www.figma.com/proto
 == Changelog ==
 
 = 1.0 =
-* Released: December 8, 2020
+* Released: Coming Soon
 
 Initial release
 
