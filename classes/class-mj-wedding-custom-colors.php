@@ -10,7 +10,7 @@
 /**
  * This class is in charge of color customization via the Customizer.
  */
-class mj_wedding_Custom_Colors {
+class MJ_Wedding_Custom_Colors {
 
 	/**
 	 * Instantiate the object.

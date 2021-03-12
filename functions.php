@@ -11,7 +11,7 @@
  * @since      1.0.0
  */
 
- // Install the plugin Installer.
+// Install the plugin Installer.
 require_once dirname( __FILE__ ) . '/inc/class-tgm-plugin-activation.php';
 
 if ( ! function_exists( 'mj_wedding_setup' ) ) {
@@ -106,11 +106,11 @@ if ( ! function_exists( 'mj_wedding_setup' ) ) {
 		add_theme_support(
 			'custom-logo',
 			array(
-				'height'                    => $logo_height,
-				'width'                     => $logo_width,
-				'flex-width'                => true,
-				'flex-height'               => true,
-				'unlink-homepage-logo'      => true,
+				'height'               => $logo_height,
+				'width'                => $logo_width,
+				'flex-width'           => true,
+				'flex-height'          => true,
+				'unlink-homepage-logo' => true,
 			)
 		);
 
@@ -126,7 +126,7 @@ if ( ! function_exists( 'mj_wedding_setup' ) ) {
 		// Add support for editor styles.
 		add_theme_support( 'editor-styles' );
 		$background_color = get_theme_mod( 'background_color', 'FFF3F4' );
-		if ( 127 > mj_wedding_Custom_Colors::get_relative_luminance_from_hex( $background_color ) ) {
+		if ( 127 > MJ_Wedding_Custom_Colors::get_relative_luminance_from_hex( $background_color ) ) {
 			add_theme_support( 'dark-editor-style' );
 		}
 
@@ -147,46 +147,46 @@ if ( ! function_exists( 'mj_wedding_setup' ) ) {
 			'editor-font-sizes',
 			array(
 				array(
-					'name'        => esc_html__( 'Extra small', 'mjwedding' ),
+					'name'      => esc_html__( 'Extra small', 'mjwedding' ),
 					'shortName' => esc_html_x( 'XS', 'Font size', 'mjwedding' ),
-					'size'        => 16,
-					'slug'        => 'extra-small',
+					'size'      => 16,
+					'slug'      => 'extra-small',
 				),
 				array(
-					'name'        => esc_html__( 'Small', 'mjwedding' ),
+					'name'      => esc_html__( 'Small', 'mjwedding' ),
 					'shortName' => esc_html_x( 'S', 'Font size', 'mjwedding' ),
-					'size'        => 18,
-					'slug'        => 'small',
+					'size'      => 18,
+					'slug'      => 'small',
 				),
 				array(
-					'name'        => esc_html__( 'Normal', 'mjwedding' ),
+					'name'      => esc_html__( 'Normal', 'mjwedding' ),
 					'shortName' => esc_html_x( 'M', 'Font size', 'mjwedding' ),
-					'size'        => 20,
-					'slug'        => 'normal',
+					'size'      => 20,
+					'slug'      => 'normal',
 				),
 				array(
-					'name'        => esc_html__( 'Large', 'mjwedding' ),
+					'name'      => esc_html__( 'Large', 'mjwedding' ),
 					'shortName' => esc_html_x( 'L', 'Font size', 'mjwedding' ),
-					'size'        => 24,
-					'slug'        => 'large',
+					'size'      => 24,
+					'slug'      => 'large',
 				),
 				array(
-					'name'        => esc_html__( 'Extra large', 'mjwedding' ),
+					'name'      => esc_html__( 'Extra large', 'mjwedding' ),
 					'shortName' => esc_html_x( 'XL', 'Font size', 'mjwedding' ),
-					'size'        => 40,
-					'slug'        => 'extra-large',
+					'size'      => 40,
+					'slug'      => 'extra-large',
 				),
 				array(
-					'name'        => esc_html__( 'Huge', 'mjwedding' ),
+					'name'      => esc_html__( 'Huge', 'mjwedding' ),
 					'shortName' => esc_html_x( 'XXL', 'Font size', 'mjwedding' ),
-					'size'        => 96,
-					'slug'        => 'huge',
+					'size'      => 96,
+					'slug'      => 'huge',
 				),
 				array(
-					'name'        => esc_html__( 'Gigantic', 'mjwedding' ),
+					'name'      => esc_html__( 'Gigantic', 'mjwedding' ),
 					'shortName' => esc_html_x( 'XXXL', 'Font size', 'mjwedding' ),
-					'size'        => 144,
-					'slug'        => 'gigantic',
+					'size'      => 144,
+					'slug'      => 'gigantic',
 				),
 			)
 		);
@@ -201,17 +201,17 @@ if ( ! function_exists( 'mj_wedding_setup' ) ) {
 		);
 
 		// Editor color palette.
-		$black      = '#000000';
+		$black     = '#000000';
 		$dark_gray = '#28303D';
-		$gray        = '#39414D';
-		$green      = '#D1E4DD';
-		$blue        = '#D1DFE4';
-		$purple     = '#D1D1E4';
-		$red         = '#E4D1D1';
-		$orange     = '#E4DAD1';
-		$yellow     = '#EEEADD';
-		$white      = '#FFFFFF';
-		$soft_pink  = '#FFF3F4';
+		$gray      = '#39414D';
+		$green     = '#D1E4DD';
+		$blue      = '#D1DFE4';
+		$purple    = '#D1D1E4';
+		$red       = '#E4D1D1';
+		$orange    = '#E4DAD1';
+		$white     = '#FFFFFF';
+		$yellow    = '#EEEADD';
+		$soft_pink = '#FFF3F4';
 
 		add_theme_support(
 			'editor-color-palette',
@@ -278,44 +278,44 @@ if ( ! function_exists( 'mj_wedding_setup' ) ) {
 			'editor-gradient-presets',
 			array(
 				array(
-					'name'      => esc_html__( 'Purple to yellow', 'mjwedding' ),
+					'name'     => esc_html__( 'Purple to yellow', 'mjwedding' ),
 					'gradient' => 'linear-gradient(160deg, ' . $purple . ' 0%, ' . $yellow . ' 100%)',
-					'slug'      => 'purple-to-yellow',
+					'slug'     => 'purple-to-yellow',
 				),
 				array(
-					'name'      => esc_html__( 'Yellow to purple', 'mjwedding' ),
+					'name'     => esc_html__( 'Yellow to purple', 'mjwedding' ),
 					'gradient' => 'linear-gradient(160deg, ' . $yellow . ' 0%, ' . $purple . ' 100%)',
-					'slug'      => 'yellow-to-purple',
+					'slug'     => 'yellow-to-purple',
 				),
 				array(
-					'name'      => esc_html__( 'Green to yellow', 'mjwedding' ),
+					'name'     => esc_html__( 'Green to yellow', 'mjwedding' ),
 					'gradient' => 'linear-gradient(160deg, ' . $green . ' 0%, ' . $yellow . ' 100%)',
-					'slug'      => 'green-to-yellow',
+					'slug'     => 'green-to-yellow',
 				),
 				array(
-					'name'      => esc_html__( 'Yellow to green', 'mjwedding' ),
+					'name'     => esc_html__( 'Yellow to green', 'mjwedding' ),
 					'gradient' => 'linear-gradient(160deg, ' . $yellow . ' 0%, ' . $green . ' 100%)',
-					'slug'      => 'yellow-to-green',
+					'slug'     => 'yellow-to-green',
 				),
 				array(
-					'name'      => esc_html__( 'Red to yellow', 'mjwedding' ),
+					'name'     => esc_html__( 'Red to yellow', 'mjwedding' ),
 					'gradient' => 'linear-gradient(160deg, ' . $red . ' 0%, ' . $yellow . ' 100%)',
-					'slug'      => 'red-to-yellow',
+					'slug'     => 'red-to-yellow',
 				),
 				array(
-					'name'      => esc_html__( 'Yellow to red', 'mjwedding' ),
+					'name'     => esc_html__( 'Yellow to red', 'mjwedding' ),
 					'gradient' => 'linear-gradient(160deg, ' . $yellow . ' 0%, ' . $red . ' 100%)',
-					'slug'      => 'yellow-to-red',
+					'slug'     => 'yellow-to-red',
 				),
 				array(
-					'name'      => esc_html__( 'Purple to red', 'mjwedding' ),
+					'name'     => esc_html__( 'Purple to red', 'mjwedding' ),
 					'gradient' => 'linear-gradient(160deg, ' . $purple . ' 0%, ' . $red . ' 100%)',
-					'slug'      => 'purple-to-red',
+					'slug'     => 'purple-to-red',
 				),
 				array(
-					'name'      => esc_html__( 'Red to purple', 'mjwedding' ),
+					'name'     => esc_html__( 'Red to purple', 'mjwedding' ),
 					'gradient' => 'linear-gradient(160deg, ' . $red . ' 0%, ' . $purple . ' 100%)',
-					'slug'      => 'red-to-purple',
+					'slug'     => 'red-to-purple',
 				),
 			)
 		);
@@ -326,7 +326,7 @@ if ( ! function_exists( 'mj_wedding_setup' ) ) {
 		* page load, as it is a one-off operation only needed once in the customizer.
 		*/
 		if ( is_customize_preview() ) {
-			include get_template_directory() . '/inc/starter-content.php';
+			require get_template_directory() . '/inc/starter-content.php';
 			add_theme_support( 'starter-content', mj_wedding_get_starter_content() );
 		}
 
@@ -343,7 +343,7 @@ if ( ! function_exists( 'mj_wedding_setup' ) ) {
 		add_theme_support( 'custom-spacing' );
 
 		// Add support for custom units.
-		// This was removed in WordPress 5.6 but is still included to properly support WP 5.5.
+		// This was removed in WordPress 5.6 but is still required to properly support WP 5.5.
 		add_theme_support( 'custom-units' );
 	}
 }
@@ -362,13 +362,13 @@ function mj_wedding_widgets_init() {
 
 	register_sidebar(
 		array(
-			'name'             => esc_html__( 'Footer', 'mjwedding' ),
-			'id'                => 'sidebar-1',
-			'description'    => esc_html__( 'Add widgets here to appear in your footer.', 'mjwedding' ),
+			'name'          => esc_html__( 'Footer', 'mjwedding' ),
+			'id'            => 'sidebar-1',
+			'description'   => esc_html__( 'Add widgets here to appear in your footer.', 'mjwedding' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
-			'after_title'    => '</h2>',
+			'after_title'   => '</h2>',
 		)
 	);
 }
@@ -481,7 +481,7 @@ function mj_wedding_skip_link_focus_fix() {
 	// If SCRIPT_DEBUG is defined and true, print the unminified file.
 	if ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) {
 		echo '<script>';
-		include get_template_directory() . '/assets/js/skip-link-focus-fix.js';
+		require get_template_directory() . '/assets/js/skip-link-focus-fix.js';
 		echo '</script>';
 	}
 
@@ -510,33 +510,33 @@ function mj_wedding_non_latin_languages() {
 add_action( 'wp_enqueue_scripts', 'mj_wedding_non_latin_languages' );
 
 	// SVG Icons class.
-	include get_template_directory() . '/classes/class-mj-wedding-svg-icons.php';
+	require get_template_directory() . '/classes/class-mj-wedding-svg-icons.php';
 
 	// Custom color classes.
-	include get_template_directory() . '/classes/class-mj-wedding-custom-colors.php';
-	new mj_wedding_Custom_Colors();
+	require get_template_directory() . '/classes/class-mj-wedding-custom-colors.php';
+	new MJ_Wedding_Custom_Colors();
 
 	// Enhance the theme by hooking into WordPress.
-	include get_template_directory() . '/inc/template-functions.php';
+	require get_template_directory() . '/inc/template-functions.php';
 
 	// Menu functions and filters.
-	include get_template_directory() . '/inc/menu-functions.php';
+	require get_template_directory() . '/inc/menu-functions.php';
 
 	// Custom template tags for the theme.
-	include get_template_directory() . '/inc/template-tags.php';
+	require get_template_directory() . '/inc/template-tags.php';
 
 	// Customizer additions.
-	include get_template_directory() . '/classes/class-mj-wedding-customize.php';
+	require get_template_directory() . '/classes/class-mj-wedding-customize.php';
 	new MJ_Wedding_Customize();
 
 	// Block Patterns.
-	include get_template_directory() . '/inc/block-patterns.php';
+	require get_template_directory() . '/inc/block-patterns.php';
 
 	// Block Styles.
-	include get_template_directory() . '/inc/block-styles.php';
+	require get_template_directory() . '/inc/block-styles.php';
 
 	// Dark Mode.
-	include_once get_template_directory() . '/classes/class-mj-wedding-dark-mode.php';
+	require_once get_template_directory() . '/classes/class-mj-wedding-dark-mode.php';
 	new MJ_Wedding_Dark_Mode();
 
 /**
@@ -620,10 +620,10 @@ add_action( 'wp_footer', 'mjwedding_add_ie_class' );
 
 
 /**
- * Register the included plugins for this theme.
+ * Register the required plugins for this theme.
  *
  * In this example, we register five plugins:
- * - one included with the TGMPA library
+ * - one required with the TGMPA library
  * - two from an external source, one from an arbitrary source, one from a GitHub repository
  * - two from the .org repo, where one demonstrates the use of the `is_callable` argument
  *
@@ -636,10 +636,10 @@ add_action( 'wp_footer', 'mjwedding_add_ie_class' );
  *
  * This function is hooked into `tgmpa_register`, which is fired on the WP `init` action on priority 10.
  */
-function my_theme_register_included_plugins() {
+function my_theme_register_required_plugins() {
 	/*
-	* Array of plugin arrays. included keys are name and slug.
-	* If the source is NOT from the .org repo, then source is also included.
+	* Array of plugin arrays. required keys are name and slug.
+	* If the source is NOT from the .org repo, then source is also required.
 	*/
 	$plugins = array(
 		// Forminator Plugin
@@ -647,12 +647,12 @@ function my_theme_register_included_plugins() {
 		// `array( 'class', 'method' )` similar to how you hook in to actions and filters, TGMPA can still
 		// recognize the plugin as being installed.
 		array(
-			'name'          => 'Forminator',
-			'slug'          => 'forminator',
-			'is_callable' => 'wpseo_init',
-			'included'              => true, // If false, the plugin is only 'recommended' instead of included.
-			// 'version'                => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
-			'force_activation'    => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+			'name'               => 'Forminator',
+			'slug'               => 'forminator',
+			'is_callable'        => 'wpseo_init',
+			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
+			'version'            => '1.14.9', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
+			'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
 			'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
 		),
 
@@ -668,18 +668,18 @@ function my_theme_register_included_plugins() {
 		* Only uncomment the strings in the config array if you want to customize the strings.
 		*/
 		$config = array(
-		'id'            => 'tgmpa',                      // Unique ID for hashing notices for multiple instances of TGMPA.
-		'default_path'  => '',                             // Default absolute path to bundled plugins.
-		'menu'          => 'tgmpa-install-plugins', // Menu slug.
-		'parent_slug'   => 'themes.php',                // Parent menu slug.
-		'capability'    => 'edit_theme_options',     // Capability needed to view plugin install page, should be a capability associated with the parent menu used.
-		'has_notices'   => true,                          // Show admin notices or not.
-		'dismissable'   => true,                          // If false, a user cannot dismiss the nag message.
-		'dismiss_msg'   => '',                             // If 'dismissable' is false, this message will be output at top of nag.
-		'is_automatic'  => false,                         // Automatically activate plugins after installation or not.
-		'message'       => '',                             // Message to output right before the plugins table.
+		'id'              => 'tgmpa',                      // Unique ID for hashing notices for multiple instances of TGMPA.
+		'default_path'    => '',                             // Default absolute path to bundled plugins.
+		'menu'            => 'tgmpa-install-plugins', // Menu slug.
+		'parent_slug'     => 'themes.php',                // Parent menu slug.
+		'capability'      => 'edit_theme_options',     // Capability needed to view plugin install page, should be a capability associated with the parent menu used.
+		'has_notices'     => true,                          // Show admin notices or not.
+		'dismissable'     => true,                          // If false, a user cannot dismiss the nag message.
+		'dismiss_msg'     => '',                             // If 'dismissable' is false, this message will be output at top of nag.
+		'is_automatic'    => false,                         // Automatically activate plugins after installation or not.
+		'message'         => '',                             // Message to output right before the plugins table.
 		);
 
 		tgmpa( $plugins, $config );
 }
-add_action( 'tgmpa_register', 'my_theme_register_included_plugins' );
+add_action( 'tgmpa_register', 'my_theme_register_required_plugins' );

@@ -1,8 +1,10 @@
 {
 "require-dev": {
     "squizlabs/php_codesniffer": "^3.5",
-    "wp-coding-standards/wpcs": "^0.13.1",
-    "phpcompatibility/phpcompatibility-wp": "^2.1"
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+    "phpcompatibility/phpcompatibility-wp": "^2.1",
+    "wp-coding-standards/wpcs": "*",
+    "wptrt/wpthemereview": "*"
 },
 "scripts": {
     "post-install-cmd": [
