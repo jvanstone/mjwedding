@@ -116,8 +116,8 @@ class mj_wedding_Custom_Colors {
 			(string) filemtime( get_theme_file_path( 'assets/css/custom-color-overrides.css' ) )
 		);
 
-		$background_color = get_theme_mod( 'background_color', 'D1E4DD' );
-		if ( 'd1e4dd' !== strtolower( $background_color ) ) {
+		$background_color = get_theme_mod( 'background_color', 'FFF3F4' );
+		if ( 'FFF3F4' !== strtolower( $background_color ) ) {
 			wp_add_inline_style( 'mj_wedding-custom-color-overrides', $this->generate_custom_color_variables( 'editor' ) );
 		}
 	}
