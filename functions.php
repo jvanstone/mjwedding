@@ -125,7 +125,7 @@ if ( ! function_exists( 'mj_wedding_setup' ) ) {
 
 		// Add support for editor styles.
 		add_theme_support( 'editor-styles' );
-		$background_color = get_theme_mod( 'background_color', 'D1E4DD' );
+		$background_color = get_theme_mod( 'background_color', 'FFF3F4' );
 		if ( 127 > mj_wedding_Custom_Colors::get_relative_luminance_from_hex( $background_color ) ) {
 			add_theme_support( 'dark-editor-style' );
 		}

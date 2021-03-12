@@ -1,5 +1,4 @@
 {
-    "phpCodeSniffer.standard": "Default",
     "phpcs.standard": "WordPress",
     "phpsab.standard": "/vendor/wp-coding-standards"
 }
