@@ -22,7 +22,7 @@ class MJ_Wedding_Customize_Color_Control extends WP_Customize_Color_Control {
 	 *
 	 * @var string
 	 */
-	public $type = 'mj_wedding-color';
+	public $type = 'mj-wedding-color';
 
 	/**
 	 * Colorpicker palette

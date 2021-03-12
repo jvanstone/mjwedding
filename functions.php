@@ -195,7 +195,7 @@ if ( ! function_exists( 'mj_wedding_setup' ) ) {
 		add_theme_support(
 			'custom-background',
 			array(
-				'default-color' => 'd1e4dd',
+				'default-color' => 'FFF3F4',
 				'default-image'  => get_template_directory_uri() . '/assets/img/mjbackground.png',
 			)
 		);
@@ -211,6 +211,7 @@ if ( ! function_exists( 'mj_wedding_setup' ) ) {
 		$orange     = '#E4DAD1';
 		$yellow     = '#EEEADD';
 		$white      = '#FFFFFF';
+		$soft_pink  = '#FFF3F4';
 
 		add_theme_support(
 			'editor-color-palette',
@@ -264,6 +265,11 @@ if ( ! function_exists( 'mj_wedding_setup' ) ) {
 					'name'  => esc_html__( 'White', 'mjwedding' ),
 					'slug'  => 'white',
 					'color' => $white,
+				),
+				array(
+					'name'  => esc_html__( 'Soft Pink', 'mjwedding' ),
+					'slug'  => 'soft-pink',
+					'color' => $soft_pink,
 				),
 			)
 		);
