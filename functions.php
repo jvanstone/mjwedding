@@ -108,9 +108,9 @@ if ( ! function_exists( 'mj_wedding_setup' ) ) {
 			array(
 				'height'                    => $logo_height,
 				'width'                     => $logo_width,
-				'flex-width'              => true,
-				'flex-height'             => true,
-				'unlink-homepage-logo' => true,
+				'flex-width'                => true,
+				'flex-height'               => true,
+				'unlink-homepage-logo'      => true,
 			)
 		);
 
