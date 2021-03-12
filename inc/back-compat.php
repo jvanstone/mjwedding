@@ -54,7 +54,7 @@ function mj_wedding_upgrade_notice() {
  *
  * @return void
  */
-function mj_wedding_customize() {
+function MJ_Wedding_Customize() {
 	wp_die(
 		sprintf(
 			/* translators: %s: WordPress Version. */
@@ -67,7 +67,7 @@ function mj_wedding_customize() {
 		)
 	);
 }
-add_action( 'load-customize.php', 'mj_wedding_customize' );
+add_action( 'load-customize.php', 'MJ_Wedding_Customize' );
 
 /**
  * Prevents the Theme Preview from being loaded on WordPress versions prior to 5.3.

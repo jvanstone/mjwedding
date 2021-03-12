@@ -1,6 +1,6 @@
 <?php
 /**
- * Customize API: mj_wedding_Customize_Notice_Control class
+ * Customize API: MJ_Wedding_Customize_Notice_Control class
  *
  * @package MJWedding
  * @subpackage  mj_wedding
@@ -14,8 +14,8 @@
  *
  * @see WP_Customize_Control
  */
-class 
-mj_wedding_Customize_Notice_Control extends WP_Customize_Control {
+class
+MJ_Wedding_Customize_Notice_Control extends WP_Customize_Control {
 	/**
 	 * The control type.
 	 *

@@ -14,7 +14,7 @@
  *
  * @see WP_Customize_Control
  */
-class mj_wedding_Customize_Color_Control extends WP_Customize_Color_Control {
+class MJ_Wedding_Customize_Color_Control extends WP_Customize_Color_Control {
 	/**
 	 * The control type.
 	 *

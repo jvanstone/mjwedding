@@ -1,7 +1,8 @@
 {
 "require-dev": {
     "squizlabs/php_codesniffer": "*",
-    "wp-coding-standards/wpcs": "^0.13.1"
+    "wp-coding-standards/wpcs": "^0.13.1",
+        "phpcompatibility/phpcompatibility-wp": "^2.1"
 },
 "scripts": {
     "post-install-cmd": [

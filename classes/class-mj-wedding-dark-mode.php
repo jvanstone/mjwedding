@@ -10,7 +10,7 @@
 /**
  * This class is in charge of Dark Mode.
  */
-class mj_wedding_Dark_Mode {
+class MJ_Wedding_Dark_Mode {
 
 	/**
 	 * Instantiate the object.
@@ -158,7 +158,7 @@ class mj_wedding_Dark_Mode {
 		);
 
 		$wp_customize->add_control(
-			new mj_wedding_Customize_Notice_Control(
+			new MJ_Wedding_Customize_Notice_Control(
 				$wp_customize,
 				'respect_user_color_preference_notice',
 				array(
