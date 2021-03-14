@@ -467,7 +467,7 @@ a.custom-logo-link{text-decoration:none}
 .singular .entry-title{text-align:center}
 h1.entry-title{line-height:var(--heading--line-height-h1);font-weight:var(--heading--font-weight-page-title)}
 .entry-content,.entry-summary{font-family:var(--entry-content--font-family)}
-.entry-content p{margin-top:1.2rem;font-variant:small-caps;font-family:var(--global--font-secondary);word-wrap:break-word}
+.entry-content p{margin-top:1.2rem;font-family:var(--entry-content--font-family);word-wrap:break-word}
 .entry-content .landing{-webkit-font-feature-settings:'tnum' on,'onum' on;font-feature-settings:'tnum' on,'onum' on}
 .entry-content>iframe[style]{margin:var(--global--spacing-vertical) auto !important;max-width:90% !important}
 .entry-footer{color:var(--global--color-primary);clear:both;float:none;font-size:var(--global--font-size-xs);display:block}

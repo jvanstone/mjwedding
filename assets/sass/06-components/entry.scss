@@ -47,8 +47,8 @@ h1.entry-title {
 
 	p {
     margin-top: 1.2rem;
-	font-variant: small-caps;
-	font-family: var(--global--font-secondary);
+	//font-variant: small-caps;
+	font-family: var(--entry-content--font-family);
 
 		word-wrap: break-word;
 	}
