@@ -53,12 +53,12 @@ h4,
 	color: rgb(65, 65, 65);
 	
 }
-h4::before {
+/* h4::before {
 	font-family: var(--global--font-secondary);
 	margin-right: 5px;
 	content: '~';
 
-}
+} */
 
 h4::after {
 	margin-left: 5px;
