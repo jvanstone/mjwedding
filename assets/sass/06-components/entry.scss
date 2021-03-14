@@ -54,7 +54,7 @@ h1.entry-title {
 	}
 
 	.landing { 
-		font-feature-settings: 'tnum' on, 'onum' on;
+		font-feature-settings: 'tnum' on, 'onum' on !important;
 	}
 
 	// Overwrite iframe embeds that have inline styles.
