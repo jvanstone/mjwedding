@@ -48,9 +48,12 @@ h1.entry-title {
 	p {
     margin-top: 1.2rem;
 	font-variant: small-caps;
-	font-feature-settings: 'tnum' on, 'onum' on;
 
 		word-wrap: break-word;
+	}
+
+	.landing { 
+		font-feature-settings: 'tnum' on, 'onum' on;
 	}
 
 	// Overwrite iframe embeds that have inline styles.
