@@ -46,14 +46,13 @@ h1.entry-title {
 .entry-content {
 
 	p {
-    margin-top: 1.2rem;
-	//font-variant: small-caps;
-	font-family: var(--entry-content--font-family);
-
+    	margin-top: 1.2rem;
+		font-family: var(--entry-content--font-family);
 		word-wrap: break-word;
 	}
 
-	.landing { 
+	.small-caps { 
+		font-variant: small-caps !important;
 		font-feature-settings: 'tnum' on, 'onum' on !important;
 	}
 
