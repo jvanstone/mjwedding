@@ -50,20 +50,21 @@ h4,
 	letter-spacing: var(--heading--letter-spacing-h4);
 	line-height: var(--heading--line-height-h4);
 	font-variant: small-caps;
-	
-}
-/* h4::before {
-	font-family: var(--global--font-secondary);
-	margin-right: 5px;
-	content: '~';
+		
+	&::before {
+		font-family: var(--global--font-secondary);
+		margin-right: 5px;
+		content: '~';
 
+	}
+
+	&::after {
+		margin-left: 5px;
+		content: '~';
+		
+	} 
 }
 
-h4::after {
-	margin-left: 5px;
-	content: '~';
-	
-} */
 h5,
 .h5 {
 	font-size: var(--heading--font-size-h5);
