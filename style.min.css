@@ -417,7 +417,7 @@ table.wp-calendar-table caption{font-weight:bold;text-align:left;margin-bottom:v
 .preloader .pre-bounce2{-webkit-animation:2s ease 0s normal none infinite bounce;animation:2s ease 0s normal none infinite bounce;animation:2s ease 0s normal none infinite bounce;background-color:#de4939;border-radius:50%;height:100%;left:0;opacity:.6;position:absolute;top:0;width:100%;-webkit-animation-delay:-0.5s;animation-delay:-0.5s;animation-delay:-0.5s}
 .preloader.disable{opacity:0}
 .preloader.hide{display:none}
-.go-top{position:fixed !important;right:20px;bottom:-45px;color:#fff;display:block;font-size:22px;line-height:35px;text-align:center;width:40px;height:40px;visibility:hidden;filter:"alpha(opacity=0)";filter:alpha(opacity=0);opacity:0;z-index:9999;cursor:pointer;border-radius:2px;border-radius:2px;-webkit-transition:all .5s;transition:all .5s;transition:all .5s;transition:all .5s;background-color:#d65050}
+.go-top{position:fixed !important;right:20px;bottom:-45px;color:#fff;display:block;font-size:22px;line-height:35px;text-align:center;width:40px;height:40px;visibility:hidden;filter:"alpha(opacity=0)";filter:alpha(opacity=0);opacity:0;z-index:9999;cursor:pointer;border-radius:4px;font-size:12px;border-radius:2px;-webkit-transition:all .5s;transition:all .5s;transition:all .5s;transition:all .5s;background-color:#d65050}
 .go-top:hover{background-color:#fff;color:#d65050}
 .go-top:hover svg{fill:#d65050}
 .go-top svg{fill:#fff}

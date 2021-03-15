@@ -81,7 +81,7 @@ var mjwedding = mjwedding || {};
 }
 
 mjweddingDomReady( function() {
-    //mjwedding.backToTop.init();
+    mjwedding.backToTop.init();
     mjwedding.removePreloader.init();
     //mjwedding.stickyMenu.init();
 	//mjwedding.mobileMenu.init();

@@ -15,15 +15,16 @@
 	opacity: 0;
 	z-index: 9999;
 	cursor: pointer;
+	border-radius: 4px;
+    font-size: 12px;
+    
+
 	border-radius: 2px;
-	-moz-border-radius: 2px;
-	-o-border-radius: 2px;
-	border-radius: 2px;
 	transition: all 0.5s;
-	-moz-transition: all 0.5s;
+	
 	transition: all 0.5s;
-	-o-transition: all 0.5s;
 	transition: all 0.5s;
+
 	background-color: #d65050;
 	&:hover {
 		background-color: #fff;
