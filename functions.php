@@ -451,10 +451,10 @@ function mj_wedding_scripts() {
 		true
 	);
 
-	// Responsive Pre-Loader.
+	// Responsive Pre-Loader and go-top to website.
 	wp_enqueue_script(
 		'mj-wedding-pre-loader-script',
-		get_template_directory_uri() . '/assets/js/preloader.js',
+		get_template_directory_uri() . '/assets/js/functions.js',
 		array( 'mj-wedding-ie11-polyfills' ),
 		wp_get_theme()->get( 'Version' ),
 		true
@@ -593,6 +593,71 @@ function mjwedding_customize_controls_enqueue_scripts() {
 }
 add_action( 'customize_controls_enqueue_scripts', 'mjwedding_customize_controls_enqueue_scripts' );
 
+/*******
+ * Add Preloader.
+ *
+ * @since 1.0.0
+ *
+ * @return void
+ */
+function mjwedding_preloader() {
+	?>
+	<div class="preloader">
+		<div class="spinner">
+			<div class="pre-bounce1"></div>
+			<div class="pre-bounce2"></div>
+		</div>
+	</div>
+	<?php
+}
+add_action( 'mjwedding_before_site', 'mjwedding_preloader' );
+
+/******
+ * Get SVG code for specific theme icon
+ * 
+ * @since 1.0.0
+ *
+ *
+ *
+ */
+function mjwedding_get_svg_icon( $icon, $echo = false ) {
+	$svg_code = wp_kses( // From TwentTwenty. Keeps only allowed tags and attributes
+		mjwedding_SVG_Icons::get_svg_icon( $icon ),
+		array(
+			'svg'     => array(
+				'class'       => true,
+				'xmlns'       => true,
+				'width'       => true,
+				'height'      => true,
+				'viewbox'     => true,
+				'aria-hidden' => true,
+				'role'        => true,
+				'focusable'   => true,
+			),
+			'path'    => array(
+				'fill'      => true,
+				'fill-rule' => true,
+				'd'         => true,
+				'transform' => true,
+			),
+			'polygon' => array(
+				'fill'      => true,
+				'fill-rule' => true,
+				'points'    => true,
+				'transform' => true,
+				'focusable' => true,
+			),
+		)
+	);
+
+	if ( $echo !== false ) {
+		echo $svg_code; //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+	} else {
+		return $svg_code;
+	}
+}
+
+
 /**
  * Calculate classes for the main <html> element.
  *
@@ -694,18 +759,3 @@ function mjwedding_register_required_plugins() {
 add_action( 'tgmpa_register', 'mjwedding_register_required_plugins' );
 
 
-/**
- * Preloader
- */
-function mjwedding_preloader() {
-	?>
-	<div class="preloader">
-	
-	    <div class="spinner">
-	        <div class="pre-bounce1"></div>
-	        <div class="pre-bounce2"></div>
-	    </div>
-	</div>
-	<?php
-}
-add_action('mjwedding_before_site', 'mjwedding_preloader');

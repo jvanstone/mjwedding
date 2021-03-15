@@ -19,7 +19,7 @@
 	<?php get_template_part( 'template-parts/footer/footer-widgets' ); ?>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-
+	<a class="go-top">Top</a>
 		<?php if ( has_nav_menu( 'footer' ) ) : ?>
 			<nav aria-label="<?php esc_attr_e( 'Secondary menu', 'mjwedding' ); ?>" class="footer-navigation">
 				<ul class="footer-navigation-wrapper">
