@@ -223,10 +223,13 @@ body:not(.single) .site-main > article:last-of-type .entry-footer {
 }
 
 @include media(tablet) { 
+
+
 	
 	main {
 		width: 750px;
-		min-height: 400px;
+		min-height: 1000px;
+		max-height: 100%;
 	 }
 }
 
@@ -234,7 +237,8 @@ body:not(.single) .site-main > article:last-of-type .entry-footer {
 
 	main {
 		//width: 90%;
-		max-width: 750px;
+		min-width: 750px;
+		
 		padding-left: calc(1 * var(--global--spacing-vertical));
 		padding-right: calc(1 * var(--global--spacing-vertical));
 	}
