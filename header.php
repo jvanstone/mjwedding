@@ -23,6 +23,8 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
+<?php do_action('mjwedding_before_site'); //Hooked: vonline_preloader() ?>
+
 <?php 
 // change the text backdrop.
 if ( is_front_page() ) :

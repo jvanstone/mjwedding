@@ -451,6 +451,15 @@ function mj_wedding_scripts() {
 		true
 	);
 
+	// Responsive Pre-Loader.
+	wp_enqueue_script(
+		'mj-wedding-pre-loader-script',
+		get_template_directory_uri() . '/assets/js/preloader.js',
+		array( 'mj-wedding-ie11-polyfills' ),
+		wp_get_theme()->get( 'Version' ),
+		true
+	);
+
 }
 add_action( 'wp_enqueue_scripts', 'mj_wedding_scripts' );
 
@@ -636,7 +645,7 @@ add_action( 'wp_footer', 'mjwedding_add_ie_class' );
  *
  * This function is hooked into `tgmpa_register`, which is fired on the WP `init` action on priority 10.
  */
-function my_theme_register_required_plugins() {
+function mjwedding_register_required_plugins() {
 	/*
 	* Array of plugin arrays. required keys are name and slug.
 	* If the source is NOT from the .org repo, then source is also required.
@@ -682,4 +691,21 @@ function my_theme_register_required_plugins() {
 
 		tgmpa( $plugins, $config );
 }
-add_action( 'tgmpa_register', 'my_theme_register_required_plugins' );
+add_action( 'tgmpa_register', 'mjwedding_register_required_plugins' );
+
+
+/**
+ * Preloader
+ */
+function mjwedding_preloader() {
+	?>
+	<div class="preloader">
+	
+	    <div class="spinner">
+	        <div class="pre-bounce1"></div>
+	        <div class="pre-bounce2"></div>
+	    </div>
+	</div>
+	<?php
+}
+add_action('mjwedding_before_site', 'mjwedding_preloader');

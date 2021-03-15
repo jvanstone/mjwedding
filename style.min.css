@@ -411,6 +411,12 @@ table.wp-calendar-table caption{font-weight:bold;text-align:left;margin-bottom:v
 .wp-block-verse{font-family:var(--entry-content--font-family)}
 .wp-block-video figcaption{color:var(--global--color-primary);font-size:var(--global--font-size-xs);margin-top:calc(0.5 * var(--global--spacing-unit));margin-bottom:var(--global--spacing-unit);text-align:center}
 *>figure>video{max-width:unset;width:100%;vertical-align:middle}
+.preloader{background:none repeat scroll 0 0 #fff;height:100%;opacity:1;position:fixed;text-align:center;-webkit-transition:opacity .2s ease 0s;transition:opacity .2s ease 0s;width:100%;z-index:9999}
+.preloader .spinner{height:30px;left:50%;margin-left:-15px;margin-top:-15px;position:relative;top:50%;width:30px}
+.preloader .pre-bounce1{-webkit-animation:2s ease 0s normal none infinite bounce;animation:2s ease 0s normal none infinite bounce;animation:2s ease 0s normal none infinite bounce;background-color:#de4939;border-radius:50%;height:100%;left:0;opacity:.6;position:absolute;top:0;width:100%}
+.preloader .pre-bounce2{-webkit-animation:2s ease 0s normal none infinite bounce;animation:2s ease 0s normal none infinite bounce;animation:2s ease 0s normal none infinite bounce;background-color:#de4939;border-radius:50%;height:100%;left:0;opacity:.6;position:absolute;top:0;width:100%;-webkit-animation-delay:-0.5s;animation-delay:-0.5s;animation-delay:-0.5s}
+.preloader.disable{opacity:0}
+.preloader.hide{display:none}
 .alignleft{text-align:left;margin-top:0}
 .entry-content>.alignleft{max-width:var(--responsive--aligndefault-width)}
 .aligncenter{clear:both;display:block;float:none;margin-right:auto;margin-left:auto;text-align:center}
@@ -831,6 +837,15 @@ main>article.post-2{padding:0 !important}
 .pagination .nav-short,.comments-pagination .nav-short{display:none}
 .widget-area{margin-top:calc(3 * var(--global--spacing-vertical))}
 .is-IE.is-dark-theme.primary-navigation-open .primary-navigation>.primary-menu-container,.is-IE.is-dark-theme.primary-navigation-open .menu-button-container{background-color:#000}
+}@-webkit-keyframes bounce{0%,20%,50%,80%,100%{-webkit-transform:translateY(0);transform:translateY(0);transform:translateY(0)}
+40%{-webkit-transform:translateY(-30px);transform:translateY(-30px);transform:translateY(-30px)}
+60%{-webkit-transform:translateY(-15px);transform:translateY(-15px);transform:translateY(-15px)}
+}@keyframes bounce{0%,20%,50%,80%,100%{-webkit-transform:translateY(0);transform:translateY(0);transform:translateY(0)}
+40%{-webkit-transform:translateY(-30px);transform:translateY(-30px);transform:translateY(-30px)}
+60%{-webkit-transform:translateY(-15px);transform:translateY(-15px);transform:translateY(-15px)}
+}@keyframes bounce{0%,20%,50%,80%,100%{-webkit-transform:translateY(0);transform:translateY(0);transform:translateY(0);transform:translateY(0)}
+40%{-webkit-transform:translateY(-30px);transform:translateY(-30px);transform:translateY(-30px);transform:translateY(-30px)}
+60%{-webkit-transform:translateY(-15px);transform:translateY(-15px);transform:translateY(-15px);transform:translateY(-15px)}
 }@-webkit-keyframes mjwedding-close-button-transition{from{opacity:0}
 to{opacity:1}
 }@keyframes mjwedding-close-button-transition{from{opacity:0}
