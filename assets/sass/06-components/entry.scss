@@ -226,7 +226,7 @@ body:not(.single) .site-main > article:last-of-type .entry-footer {
 	
 	main {
 		width: 750px;
-		min-height: 1000px;
+		min-height: 900px;
 		max-height: 100%;
 	 }
 }
@@ -236,6 +236,8 @@ body:not(.single) .site-main > article:last-of-type .entry-footer {
 	main {
 		//width: 90%;
 		min-width: 750px;
+		min-height: 500px;
+		max-height: 100%;
 		padding-left: calc(1 * var(--global--spacing-vertical));
 		padding-right: calc(1 * var(--global--spacing-vertical));
 	}
@@ -245,6 +247,8 @@ body:not(.single) .site-main > article:last-of-type .entry-footer {
 
 	main > article {
 		width: 100%;
+		min-height: 500px;
+		max-height: 100%;
 		padding-left: calc(1 * var(--global--spacing-vertical));
 		padding-right: calc(1 * var(--global--spacing-vertical));
 	}

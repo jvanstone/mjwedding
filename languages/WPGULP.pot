@@ -1,0 +1,1128 @@
+# Copyright (C) 2021 MJWedding
+# This file is distributed under the same license as the MJWedding package.
+msgid ""
+msgstr ""
+"Project-Id-Version: MJWedding\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: Maguelone & Jason <magueloneandjason@gmail.com>\n"
+"Report-Msgid-Bugs-To: jason@vanstoneoneline.com\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: 404.php:18, template-parts/content/content-none.php:30
+msgid "Nothing here"
+msgstr ""
+
+#: 404.php:24
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#. translators: %s: comment count number.
+#: comments.php:41
+msgctxt "Comments title"
+msgid "%s comment"
+msgid_plural "%s comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:36
+msgid "1 comment"
+msgstr ""
+
+#. translators: There is a space after page.
+#. translators: There is a space after page.
+#: comments.php:64, inc/template-tags.php:240
+msgid "Page "
+msgstr ""
+
+#: comments.php:69
+msgid "Older comments"
+msgstr ""
+
+#: comments.php:73
+msgid "Newer comments"
+msgstr ""
+
+#: comments.php:81
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:89
+msgid "Leave a comment"
+msgstr ""
+
+#: footer.php:25, functions.php:74, inc/starter-content.php:165
+msgid "Secondary menu"
+msgstr ""
+
+#. translators: %s: WordPress.
+#: footer.php:61
+msgid "Proudly powered by %s."
+msgstr ""
+
+#: footer.php:62
+msgid "https://wordpress.org/"
+msgstr ""
+
+#. translators: %s: WordPress.
+#: footer.php:66
+msgid "Made by %s."
+msgstr ""
+
+#: footer.php:67
+msgid "https://vanstoneonline.com/"
+msgstr ""
+
+#: functions.php:73, inc/starter-content.php:154, template-parts/header/site-nav.php:13
+msgid "Primary menu"
+msgstr ""
+
+#: functions.php:147
+msgid "Extra small"
+msgstr ""
+
+#: functions.php:148
+msgctxt "Font size"
+msgid "XS"
+msgstr ""
+
+#: functions.php:153
+msgid "Small"
+msgstr ""
+
+#: functions.php:154
+msgctxt "Font size"
+msgid "S"
+msgstr ""
+
+#: functions.php:159
+msgid "Normal"
+msgstr ""
+
+#: functions.php:160
+msgctxt "Font size"
+msgid "M"
+msgstr ""
+
+#: functions.php:165
+msgid "Large"
+msgstr ""
+
+#: functions.php:166
+msgctxt "Font size"
+msgid "L"
+msgstr ""
+
+#: functions.php:171
+msgid "Extra large"
+msgstr ""
+
+#: functions.php:172
+msgctxt "Font size"
+msgid "XL"
+msgstr ""
+
+#: functions.php:177
+msgid "Huge"
+msgstr ""
+
+#: functions.php:178
+msgctxt "Font size"
+msgid "XXL"
+msgstr ""
+
+#: functions.php:183
+msgid "Gigantic"
+msgstr ""
+
+#: functions.php:184
+msgctxt "Font size"
+msgid "XXXL"
+msgstr ""
+
+#: functions.php:217
+msgid "Black"
+msgstr ""
+
+#: functions.php:222, inc/block-styles.php:107
+msgid "Dark gray"
+msgstr ""
+
+#: functions.php:227
+msgid "Gray"
+msgstr ""
+
+#: functions.php:232
+msgid "Green"
+msgstr ""
+
+#: functions.php:237
+msgid "Blue"
+msgstr ""
+
+#: functions.php:242
+msgid "Purple"
+msgstr ""
+
+#: functions.php:247
+msgid "Red"
+msgstr ""
+
+#: functions.php:252
+msgid "Orange"
+msgstr ""
+
+#: functions.php:257
+msgid "Yellow"
+msgstr ""
+
+#: functions.php:262
+msgid "White"
+msgstr ""
+
+#: functions.php:267
+msgid "Soft Pink"
+msgstr ""
+
+#: functions.php:278
+msgid "Purple to yellow"
+msgstr ""
+
+#: functions.php:283
+msgid "Yellow to purple"
+msgstr ""
+
+#: functions.php:288
+msgid "Green to yellow"
+msgstr ""
+
+#: functions.php:293
+msgid "Yellow to green"
+msgstr ""
+
+#: functions.php:298
+msgid "Red to yellow"
+msgstr ""
+
+#: functions.php:303
+msgid "Yellow to red"
+msgstr ""
+
+#: functions.php:308
+msgid "Purple to red"
+msgstr ""
+
+#: functions.php:313
+msgid "Red to purple"
+msgstr ""
+
+#: functions.php:362
+msgid "Footer"
+msgstr ""
+
+#: functions.php:364
+msgid "Add widgets here to appear in your footer."
+msgstr ""
+
+#: header.php:29
+msgid "Skip to content"
+msgstr ""
+
+#: image.php:43, template-parts/content/content-page.php:33, template-parts/content/content-single.php:27, template-parts/content/content.php:33
+msgid "Page"
+msgstr ""
+
+#. translators: %: page number.
+#. translators: %: page number.
+#. translators: %: page number.
+#. translators: %: page number.
+#: image.php:46, template-parts/content/content-page.php:36, template-parts/content/content-single.php:30, template-parts/content/content.php:36
+msgid "Page %"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers.
+#. translators: %s: Name of current post. Only visible to screen readers.
+#. translators: %s: Name of current post. Only visible to screen readers.
+#. translators: %s: Name of current post. Only visible to screen readers.
+#: image.php:68, image.php:93, inc/template-tags.php:135, inc/template-tags.php:92, template-parts/content/content-page.php:48
+msgid "Edit %s"
+msgstr ""
+
+#: image.php:59
+msgid "Published in %s"
+msgstr ""
+
+#: image.php:81
+msgctxt "Used before full size attachment link."
+msgid "Full size"
+msgstr ""
+
+#. translators: %s: search term.
+#: search.php:21, template-parts/content/content-none.php:22
+msgid "Results for \"%s\""
+msgstr ""
+
+#. translators: %d: the number of search results.
+#: search.php:33
+msgid "We found %d result for your search."
+msgid_plural "We found %d results for your search."
+msgstr[0] ""
+msgstr[1] ""
+
+#: searchform.php:24
+msgid "Search&hellip;"
+msgstr ""
+
+#: searchform.php:26
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#. translators: %s: parent post link.
+#: single.php:25
+msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%s</span>"
+msgstr ""
+
+#. translators: %s: The post-type singlular name (example: Post, Page etc)
+#: single.php:51
+msgid "Next %s"
+msgstr ""
+
+#. translators: %s: The post-type singlular name (example: Post, Page etc)
+#: single.php:53
+msgid "Previous %s"
+msgstr ""
+
+#: classes/class-mjwedding-customize-notice-control.php:41
+msgid "To access the Dark Mode settings, select a light background color."
+msgstr ""
+
+#: classes/class-mjwedding-customize-notice-control.php:43
+msgid "Learn more about Dark Mode."
+msgstr ""
+
+#: classes/class-mjwedding-customize.php:80
+msgid "Display Site Title & Tagline"
+msgstr ""
+
+#: classes/class-mjwedding-customize.php:90
+msgid "Excerpt Settings"
+msgstr ""
+
+#: classes/class-mjwedding-customize.php:111
+msgid "On Archive Pages, posts show:"
+msgstr ""
+
+#: classes/class-mjwedding-customize.php:113
+msgid "Summary"
+msgstr ""
+
+#: classes/class-mjwedding-customize.php:114
+msgid "Full text"
+msgstr ""
+
+#: classes/class-mjwedding-customize.php:143
+msgctxt "Customizer control"
+msgid "Background color"
+msgstr ""
+
+#: classes/class-mjwedding-dark-mode.php:145
+msgid "Colors & Dark Mode"
+msgstr ""
+
+#. translators: %s is the wordpress.org M & J Wedding support article URL.
+#: classes/class-mjwedding-dark-mode.php:188
+msgid "Dark Mode is a device setting. If a visitor to your site requests it, your site will be shown with a dark background and light text. <a href=\"%s\">Learn more about Dark Mode.</a>"
+msgstr ""
+
+#: classes/class-mjwedding-dark-mode.php:189
+msgid "https://wordpress.org/support/article/mjwedding/"
+msgstr ""
+
+#: classes/class-mjwedding-dark-mode.php:192
+msgid "Dark Mode can also be turned on and off with a button that you can find in the bottom right corner of the page."
+msgstr ""
+
+#: classes/class-mjwedding-dark-mode.php:199
+msgid "Dark Mode support"
+msgstr ""
+
+#. translators: %s: On/Off
+#: classes/class-mjwedding-dark-mode.php:345
+msgid "Dark Mode: %s"
+msgstr ""
+
+#: classes/class-mjwedding-dark-mode.php:355
+msgid "Off"
+msgstr ""
+
+#: classes/class-mjwedding-dark-mode.php:358
+msgid "On"
+msgstr ""
+
+#: classes/class-mjwedding-dark-mode.php:406
+msgid "M & J Wedding uses LocalStorage when Dark Mode support is enabled."
+msgstr ""
+
+#: classes/class-mjwedding-dark-mode.php:407
+msgid "Suggested text:"
+msgstr ""
+
+#: classes/class-mjwedding-dark-mode.php:408
+msgid "This website uses LocalStorage to save the setting when Dark Mode support is turned on or off.<br> LocalStorage is necessary for the setting to work and is only used when a user clicks on the Dark Mode button.<br> No data is saved in the database or transferred."
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:325
+msgid "Install Required Plugins"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:326
+msgid "Install Plugins"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: classes/class-tgm-plugin-activation.php:328
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: classes/class-tgm-plugin-activation.php:330
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:331
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:332
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: classes/class-tgm-plugin-activation.php:338
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: classes/class-tgm-plugin-activation.php:344
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: classes/class-tgm-plugin-activation.php:350
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: classes/class-tgm-plugin-activation.php:356
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: classes/class-tgm-plugin-activation.php:362
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: classes/class-tgm-plugin-activation.php:368
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: classes/class-tgm-plugin-activation.php:373
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: classes/class-tgm-plugin-activation.php:378
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: classes/class-tgm-plugin-activation.php:383
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:384, classes/class-tgm-plugin-activation.php:825, classes/class-tgm-plugin-activation.php:2531, classes/class-tgm-plugin-activation.php:3579
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:385, classes/class-tgm-plugin-activation.php:3157
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:386, classes/class-tgm-plugin-activation.php:2950
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name.
+#: classes/class-tgm-plugin-activation.php:388
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: classes/class-tgm-plugin-activation.php:390
+msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
+msgstr ""
+
+#. translators: 1: dashboard link.
+#: classes/class-tgm-plugin-activation.php:392
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:393
+msgid "Dismiss this notice"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:394
+msgid "There are one or more required or recommended plugins to install, update or activate."
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:395
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:520
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:521
+msgid "Update Required"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:935
+msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:935, classes/class-tgm-plugin-activation.php:932
+msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:932
+msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:1119, classes/class-tgm-plugin-activation.php:2946
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#. translators: %s: version number
+#: classes/class-tgm-plugin-activation.php:1980
+msgid "TGMPA v%s"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:2271
+msgid "Required"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:2274
+msgid "Recommended"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:2290
+msgid "WordPress Repository"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:2293
+msgid "External Source"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:2296
+msgid "Pre-Packaged"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:2313
+msgid "Not Installed"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:2319
+msgid "Active"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:2317
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:2331
+msgid "Update recommended"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:2328
+msgid "Requires Update"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:2325
+msgid "Required Update not Available"
+msgstr ""
+
+#. translators: 1: install status, 2: update status
+#: classes/class-tgm-plugin-activation.php:2340
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#. translators: 1: number of plugins.
+#: classes/class-tgm-plugin-activation.php:2386
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: classes/class-tgm-plugin-activation.php:2390
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: classes/class-tgm-plugin-activation.php:2394
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: classes/class-tgm-plugin-activation.php:2398
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: classes/class-tgm-plugin-activation.php:2480
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:2488
+msgid "Installed version:"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:2496
+msgid "Minimum required version:"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:2508
+msgid "Available version:"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:2531
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:2545
+msgid "Plugin"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:2546
+msgid "Source"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:2547
+msgid "Type"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:2551
+msgid "Version"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:2552
+msgid "Status"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: classes/class-tgm-plugin-activation.php:2606
+msgid "Update %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: classes/class-tgm-plugin-activation.php:2612
+msgid "Activate %2$s"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:2601
+msgid "Install %2$s"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:2682
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:2715
+msgid "Install"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:2721
+msgid "Update"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:2724
+msgid "Activate"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:2757
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:2755
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:2800
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:2798
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:2906
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:2932
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:3156
+msgid "Plugin activation failed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+#: classes/class-tgm-plugin-activation.php:3500
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: classes/class-tgm-plugin-activation.php:3502
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:3514
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: classes/class-tgm-plugin-activation.php:3516
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:3516, classes/class-tgm-plugin-activation.php:3508
+msgid "Show Details"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:3516, classes/class-tgm-plugin-activation.php:3508
+msgid "Hide Details"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:3517
+msgid "All installations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: classes/class-tgm-plugin-activation.php:3519
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:3506
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:3508
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:3509
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:3511
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: classes/class-tgm-plugin-activation.php:3497
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. translators: %s: WordPress Version.
+#. translators: %s: WordPress Version.
+#. translators: %s: WordPress Version.
+#: inc/back-compat.php:42, inc/back-compat.php:61, inc/back-compat.php:86
+msgid "This theme requires WordPress 5.3 or newer. You are running version %s. Please upgrade."
+msgstr ""
+
+#: inc/block-patterns.php:21
+msgid "M & J Wedding"
+msgstr ""
+
+#: inc/block-patterns.php:38
+msgid "Large text"
+msgstr ""
+
+#: inc/block-patterns.php:41
+msgid "A new portfolio default theme for WordPress"
+msgstr ""
+
+#: inc/block-patterns.php:49
+msgid "Links area"
+msgstr ""
+
+#: inc/block-patterns.php:52
+msgctxt "Block pattern description"
+msgid "A huge text followed by social networks and email address links."
+msgstr ""
+
+#: inc/block-patterns.php:53
+msgid "Let&#8217;s Connect."
+msgstr ""
+
+#: inc/block-patterns.php:53
+msgid "Twitter"
+msgstr ""
+
+#: inc/block-patterns.php:53
+msgid "Instagram"
+msgstr ""
+
+#: inc/block-patterns.php:53
+msgid "Dribbble"
+msgstr ""
+
+#: inc/block-patterns.php:53
+msgid "example@example.com"
+msgstr ""
+
+#: inc/block-patterns.php:61
+msgid "Media and text article title"
+msgstr ""
+
+#: inc/block-patterns.php:64
+msgctxt "Block pattern description"
+msgid "A Media & Text block with a big image on the left and a heading on the right. The heading is followed by a separator and a description paragraph."
+msgstr ""
+
+#: inc/block-patterns.php:65
+msgid "&#8220;Playing in the Sand&#8221; by Berthe Morisot"
+msgstr ""
+
+#: inc/block-patterns.php:65
+msgid "Playing in the Sand"
+msgstr ""
+
+#: inc/block-patterns.php:65
+msgid "Berthe Morisot<br>(French, 1841-1895)"
+msgstr ""
+
+#: inc/block-patterns.php:73
+msgid "Overlapping images"
+msgstr ""
+
+#: inc/block-patterns.php:76
+msgctxt "Block pattern description"
+msgid "Three images inside an overlapping columns block."
+msgstr ""
+
+#: inc/block-patterns.php:77, inc/block-patterns.php:112, inc/starter-content.php:43
+msgid "&#8220;Roses Tremieres&#8221; by Berthe Morisot"
+msgstr ""
+
+#: inc/block-patterns.php:77, inc/block-patterns.php:112, inc/starter-content.php:51
+msgid "&#8220;In the Bois de Boulogne&#8221; by Berthe Morisot"
+msgstr ""
+
+#: inc/block-patterns.php:77, inc/block-patterns.php:112, inc/starter-content.php:61
+msgid "&#8220;Young Woman in Mauve&#8221; by Berthe Morisot"
+msgstr ""
+
+#: inc/block-patterns.php:85
+msgid "Two images showcase"
+msgstr ""
+
+#: inc/block-patterns.php:88
+msgctxt "Block pattern description"
+msgid "A media & text block with a big image on the left and a smaller one with bordered frame on the right."
+msgstr ""
+
+#: inc/block-patterns.php:89
+msgid "&#8220;Daffodils&#8221; by Berthe Morisot"
+msgstr ""
+
+#: inc/block-patterns.php:89
+msgid "&#8220;Self portrait&#8221; by Berthe Morisot"
+msgstr ""
+
+#: inc/block-patterns.php:97
+msgid "Overlapping images and text"
+msgstr ""
+
+#: inc/block-patterns.php:100
+msgctxt "Block pattern description"
+msgid "An overlapping columns block with two images and a text description."
+msgstr ""
+
+#: inc/block-patterns.php:101, inc/block-patterns.php:112
+msgid "&#8220;The Garden at Bougival&#8221; by Berthe Morisot"
+msgstr ""
+
+#: inc/block-patterns.php:101
+msgid "Beautiful gardens painted by Berthe Morisot in the late 1800s"
+msgstr ""
+
+#: inc/block-patterns.php:101
+msgid "&#8220;Villa with Orange Trees, Nice&#8221; by Berthe Morisot"
+msgstr ""
+
+#: inc/block-patterns.php:109
+msgid "Portfolio list"
+msgstr ""
+
+#: inc/block-patterns.php:111
+msgctxt "Block pattern description"
+msgid "A list of projects with thumbnail images."
+msgstr ""
+
+#: inc/block-patterns.php:112
+msgid "Roses Tremieres"
+msgstr ""
+
+#: inc/block-patterns.php:112
+msgid "Villa with Orange Trees, Nice"
+msgstr ""
+
+#: inc/block-patterns.php:112
+msgid "In the Bois de Boulogne"
+msgstr ""
+
+#: inc/block-patterns.php:112
+msgid "The Garden at Bougival"
+msgstr ""
+
+#: inc/block-patterns.php:112
+msgid "Young Woman in Mauve"
+msgstr ""
+
+#: inc/block-patterns.php:112
+msgid "Reading"
+msgstr ""
+
+#: inc/block-patterns.php:112
+msgid "&#8220;Reading&#8221; by Berthe Morisot"
+msgstr ""
+
+#: inc/block-patterns.php:119
+msgid "Contact information"
+msgstr ""
+
+#: inc/block-patterns.php:121
+msgctxt "Block pattern description"
+msgid "A block with 3 columns that display contact information and social media links."
+msgstr ""
+
+#: inc/block-patterns.php:122
+msgctxt "Block pattern sample content"
+msgid "example@example.com"
+msgstr ""
+
+#: inc/block-patterns.php:122
+msgctxt "Block pattern sample content"
+msgid "123-456-7890"
+msgstr ""
+
+#: inc/block-patterns.php:122
+msgctxt "Block pattern sample content"
+msgid "123 Main Street"
+msgstr ""
+
+#: inc/block-patterns.php:122
+msgctxt "Block pattern sample content"
+msgid "Cambridge, MA, 02139"
+msgstr ""
+
+#: inc/block-styles.php:26
+msgid "Overlap"
+msgstr ""
+
+#: inc/block-styles.php:35, inc/block-styles.php:44, inc/block-styles.php:53, inc/block-styles.php:80, inc/block-styles.php:89
+msgid "Borders"
+msgstr ""
+
+#: inc/block-styles.php:62
+msgid "Frame"
+msgstr ""
+
+#: inc/block-styles.php:71
+msgid "Dividers"
+msgstr ""
+
+#: inc/block-styles.php:98
+msgid "Thick"
+msgstr ""
+
+#: inc/menu-functions.php:35
+msgid "Open menu"
+msgstr ""
+
+#: inc/starter-content.php:30, inc/starter-content.php:33
+msgctxt "Theme starter content"
+msgid "Create your website with blocks"
+msgstr ""
+
+#: inc/starter-content.php:73
+msgctxt "Theme starter content"
+msgid "Add block patterns"
+msgstr ""
+
+#: inc/starter-content.php:77
+msgctxt "Theme starter content"
+msgid "Block patterns are pre-designed groups of blocks. To add one, select the Add Block button [+] in the toolbar at the top of the editor. Switch to the Patterns tab underneath the search bar, and choose a pattern."
+msgstr ""
+
+#: inc/starter-content.php:83
+msgctxt "Theme starter content"
+msgid "Frame your images"
+msgstr ""
+
+#: inc/starter-content.php:87
+msgctxt "Theme starter content"
+msgid "M & J Wedding includes stylish borders for your content. With an Image block selected, open the \"Styles\" panel within the Editor sidebar. Select the \"Frame\" block style to activate it."
+msgstr ""
+
+#: inc/starter-content.php:93
+msgctxt "Theme starter content"
+msgid "Overlap columns"
+msgstr ""
+
+#: inc/starter-content.php:97
+msgctxt "Theme starter content"
+msgid "M & J Wedding also includes an overlap style for column blocks. With a Columns block selected, open the \"Styles\" panel within the Editor sidebar. Choose the \"Overlap\" block style to try it out."
+msgstr ""
+
+#: inc/starter-content.php:112
+msgctxt "Theme starter content"
+msgid "Need help?"
+msgstr ""
+
+#: inc/starter-content.php:122
+msgctxt "Theme starter content"
+msgid "Read the Theme Documentation"
+msgstr ""
+
+#: inc/starter-content.php:128
+msgctxt "Theme starter content"
+msgid "Check out the Support Forums"
+msgstr ""
+
+#. translators: %s: Name of current post.
+#: inc/template-functions.php:132
+msgid "Continue reading %s"
+msgstr ""
+
+#: inc/template-functions.php:174
+msgctxt "Added to posts and pages that are missing titles"
+msgid "Untitled"
+msgstr ""
+
+#: inc/template-functions.php:397
+msgid "This content is password protected. Please enter a password to view."
+msgstr ""
+
+#: inc/template-functions.php:399
+msgctxt "Post password form"
+msgid "Password"
+msgstr ""
+
+#: inc/template-functions.php:399
+msgctxt "Post password form"
+msgid "Submit"
+msgstr ""
+
+#: inc/template-functions.php:399
+msgctxt "Post password form"
+msgid "Enter"
+msgstr ""
+
+#. translators: %s: publish date.
+#: inc/template-tags.php:29
+msgid "Published %s"
+msgstr ""
+
+#. translators: %s author name.
+#. translators: 1: Author name.
+#: inc/template-tags.php:49, template-parts/post/author-bio.php:15
+msgid "By %s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma.
+#. translators: used between list items, there is a space after the comma.
+#: inc/template-tags.php:148, inc/template-tags.php:158, inc/template-tags.php:104, inc/template-tags.php:114
+msgid ", "
+msgstr ""
+
+#. translators: %s: list of categories.
+#: inc/template-tags.php:152, inc/template-tags.php:108
+msgid "Categorized as %s"
+msgstr ""
+
+#. translators: %s: list of tags.
+#: inc/template-tags.php:162, inc/template-tags.php:118
+msgid "Tagged %s"
+msgstr ""
+
+#: inc/template-tags.php:77
+msgctxt "Label for sticky posts"
+msgid "Featured post"
+msgstr ""
+
+#. translators: %s: The post-type name.
+#: inc/template-tags.php:247
+msgid "Newer %s"
+msgstr ""
+
+#. translators: %s: The post-type name.
+#: inc/template-tags.php:255
+msgid "Older %s"
+msgstr ""
+
+#: template-parts/content/content-none.php:61
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/content/content-none.php:56
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/content/content-none.php:43
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/header/site-nav.php:16
+msgid "Menu"
+msgstr ""
+
+#: template-parts/header/site-nav.php:19
+msgid "Close"
+msgstr ""
+
+#. translators: 1: Link to authors posts. 2: Author name.
+#: template-parts/post/author-bio.php:20
+msgid "View all of %2$s's posts."
+msgstr ""

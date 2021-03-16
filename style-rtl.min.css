@@ -411,17 +411,13 @@ table.wp-calendar-table caption{font-weight:bold;text-align:right;margin-bottom:
 .wp-block-verse{font-family:var(--entry-content--font-family)}
 .wp-block-video figcaption{color:var(--global--color-primary);font-size:var(--global--font-size-xs);margin-top:calc(0.5 * var(--global--spacing-unit));margin-bottom:var(--global--spacing-unit);text-align:center}
 *>figure>video{max-width:unset;width:100%;vertical-align:middle}
-.preloader{background:none repeat scroll 100% 0 #fff;height:100%;opacity:1;position:fixed;text-align:center;-webkit-transition:opacity .2s ease 0s;transition:opacity .2s ease 0s;width:100%;z-index:9999}
-.preloader .spinner{height:30px;right:50%;margin-right:-15px;margin-top:-15px;position:relative;top:50%;width:30px}
-.preloader .pre-bounce1{-webkit-animation:2s ease 0s normal none infinite bounce;animation:2s ease 0s normal none infinite bounce;animation:2s ease 0s normal none infinite bounce;background-color:#de4939;border-radius:50%;height:100%;right:0;opacity:.6;position:absolute;top:0;width:100%}
-.preloader .pre-bounce2{-webkit-animation:2s ease 0s normal none infinite bounce;animation:2s ease 0s normal none infinite bounce;animation:2s ease 0s normal none infinite bounce;background-color:#de4939;border-radius:50%;height:100%;right:0;opacity:.6;position:absolute;top:0;width:100%;-webkit-animation-delay:-0.5s;animation-delay:-0.5s;animation-delay:-0.5s}
-.preloader.disable{opacity:0}
-.preloader.hide{display:none}
-.go-top{position:fixed !important;left:20px;bottom:-45px;color:#fff;display:block;font-size:22px;line-height:35px;text-align:center;width:40px;height:40px;visibility:hidden;filter:"alpha(opacity=0)";filter:alpha(opacity=0);opacity:0;z-index:9999;cursor:pointer;border-radius:4px;font-size:12px;border-radius:2px;-webkit-transition:all .5s;transition:all .5s;transition:all .5s;transition:all .5s;background-color:#d65050}
-.go-top:hover{background-color:#fff;color:#d65050}
-.go-top:hover svg{fill:#d65050}
-.go-top svg{fill:#fff}
-.go-top.show{filter:"alpha(opacity=100)";filter:alpha(opacity=100);opacity:1;visibility:visible;bottom:11px}
+:root .is-extra-small-text,:root .has-extra-small-font-size{font-size:var(--global--font-size-xs)}
+:root .is-small-text,:root .has-small-font-size{font-size:var(--global--font-size-sm)}
+:root .is-regular-text,:root .has-regular-font-size,:root .is-normal-font-size,:root .has-normal-font-size,:root .has-medium-font-size{font-size:var(--global--font-size-base)}
+:root .is-large-text,:root .has-large-font-size{font-size:var(--global--font-size-lg);line-height:var(--global--line-height-heading)}
+:root .is-larger-text,:root .has-larger-font-size,:root .is-extra-large-text,:root .has-extra-large-font-size{font-size:var(--global--font-size-xl);line-height:var(--global--line-height-heading)}
+:root .is-huge-text,:root .has-huge-font-size{font-size:var(--global--font-size-xxl);line-height:var(--global--line-height-heading);font-weight:var(--heading--font-weight-page-title)}
+:root .is-gigantic-text,:root .has-gigantic-font-size{font-size:var(--global--font-size-xxxl);line-height:var(--global--line-height-heading);font-weight:var(--heading--font-weight-page-title)}
 .alignleft{text-align:left;margin-top:0}
 .entry-content>.alignleft{max-width:var(--responsive--aligndefault-width)}
 .aligncenter{clear:both;display:block;float:none;margin-left:auto;margin-right:auto;text-align:center}
@@ -704,6 +700,17 @@ html,body,div,header,nav,article,figure,hr,main,section,footer{max-width:none}
 .is-IE.is-dark-theme .skip-link:focus{color:#21759b}
 .is-IE .navigation .nav-links{display:block}
 .is-IE .post-thumbnail .wp-post-image{min-width:auto}
+.go-top{position:fixed !important;left:20px;bottom:-45px;color:#fff;display:block;font-size:22px;line-height:35px;text-align:center;width:40px;height:40px;visibility:hidden;filter:"alpha(opacity=0)";filter:alpha(opacity=0);opacity:0;z-index:9999;cursor:pointer;border-radius:4px;font-size:12px;border-radius:2px;-webkit-transition:all .5s;transition:all .5s;transition:all .5s;transition:all .5s;background-color:#d65050}
+.go-top:hover{background-color:#fff;color:#d65050}
+.go-top:hover svg{fill:#d65050}
+.go-top svg{fill:#fff}
+.go-top.show{filter:"alpha(opacity=100)";filter:alpha(opacity=100);opacity:1;visibility:visible;bottom:11px}
+.preloader{background:none repeat scroll 100% 0 #fff;height:100%;opacity:1;position:fixed;text-align:center;-webkit-transition:opacity .2s ease 0s;transition:opacity .2s ease 0s;width:100%;z-index:9999}
+.preloader .spinner{height:30px;right:50%;margin-right:-15px;margin-top:-15px;position:relative;top:50%;width:30px}
+.preloader .pre-bounce1{-webkit-animation:2s ease 0s normal none infinite bounce;animation:2s ease 0s normal none infinite bounce;animation:2s ease 0s normal none infinite bounce;background-color:#de4939;border-radius:50%;height:100%;right:0;opacity:.6;position:absolute;top:0;width:100%}
+.preloader .pre-bounce2{-webkit-animation:2s ease 0s normal none infinite bounce;animation:2s ease 0s normal none infinite bounce;animation:2s ease 0s normal none infinite bounce;background-color:#de4939;border-radius:50%;height:100%;right:0;opacity:.6;position:absolute;top:0;width:100%;-webkit-animation-delay:-0.5s;animation-delay:-0.5s;animation-delay:-0.5s}
+.preloader.disable{opacity:0}
+.preloader.hide{display:none}
 @media(prefers-reduced-motion){*{-webkit-transition-delay:0s !important;transition-delay:0s !important;-webkit-transition-duration:0s !important;transition-duration:0s !important}
 }@media only screen and (min-width:482px){:root{--responsive--aligndefault-width:min(calc(100vw - 4 * var(--global--spacing-horizontal)), 610px);--responsive--alignwide-width:calc(100vw - 4 * var(--global--spacing-horizontal));--responsive--alignright-margin:calc(0.5 * (100vw - var(--responsive--aligndefault-width)));--responsive--alignleft-margin:calc(0.5 * (100vw - var(--responsive--aligndefault-width)))}
 .full-max-width,.alignfull{max-width:var(--responsive--alignfull-width);width:auto;margin-right:auto;margin-left:auto}
@@ -729,7 +736,7 @@ html,body,div,header,nav,article,figure,hr,main,section,footer{max-width:none}
 .site-title{font-size:var(--branding--title--font-size)}
 .site-logo .custom-logo{max-width:var(--branding--logo--max-width);max-height:var(--branding--logo--max-height);height:auto;width:auto}
 .entry-content>iframe[style]{max-width:100% !important}
-main{min-width:750px;padding-right:calc(1 * var(--global--spacing-vertical));padding-left:calc(1 * var(--global--spacing-vertical))}
+main{min-width:750px;min-height:500px;max-height:100%;padding-right:calc(1 * var(--global--spacing-vertical));padding-left:calc(1 * var(--global--spacing-vertical))}
 .comment-list .depth-2,.comment-list .depth-3{padding-right:calc(4 * var(--global--spacing-horizontal))}
 .comment-meta .comment-author{margin-bottom:0;padding-left:0}
 .comment-meta{margin-left:inherit}
@@ -764,7 +771,7 @@ main{min-width:750px;padding-right:calc(1 * var(--global--spacing-vertical));pad
 .post-navigation .nav-links{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
 }@media only screen and (min-width:592px){.post-password-form__submit{margin-right:calc(0.4 * var(--global--spacing-horizontal))}
 .wp-block-media-text .wp-block-media-text__content{padding:var(--global--spacing-vertical)}
-main{width:750px;min-height:1000px;max-height:100%}
+main{width:750px;min-height:900px;max-height:100%}
 .navigation .nav-links{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-ms-flex-wrap:wrap;flex-wrap:wrap}
 .navigation .nav-links .nav-next,.navigation .nav-links .nav-previous{-webkit-box-flex:0;-ms-flex:0 1 auto;flex:0 1 auto;margin-bottom:inherit;margin-top:inherit;max-width:calc(50% - (0.5 * var(--global--spacing-unit)))}
 .navigation .nav-links .nav-next{text-align:left}
@@ -822,7 +829,7 @@ body:not(.primary-navigation-open) .site-header.has-logo.has-title-and-tagline .
 .single .site-main>article>.entry-footer{display:block}
 .single .site-main>article>.entry-footer .full-size-link{display:block}
 .single .site-main>article>.entry-footer .post-taxonomies,.single .site-main>article>.entry-footer .full-size-link{text-align:right}
-main>article{width:100%;padding-right:calc(1 * var(--global--spacing-vertical));padding-left:calc(1 * var(--global--spacing-vertical))}
+main>article{width:100%;min-height:500px;max-height:100%;padding-right:calc(1 * var(--global--spacing-vertical));padding-left:calc(1 * var(--global--spacing-vertical))}
 main>article.post-2{padding:0 !important}
 .comment-form .comment-form-author,.comment-form .comment-form-email{-ms-flex-preferred-size:100%;flex-basis:100%}
 .menu-button-container{display:-webkit-box;display:-ms-flexbox;display:flex}
@@ -842,6 +849,10 @@ main>article.post-2{padding:0 !important}
 .pagination .nav-short,.comments-pagination .nav-short{display:none}
 .widget-area{margin-top:calc(3 * var(--global--spacing-vertical))}
 .is-IE.is-dark-theme.primary-navigation-open .primary-navigation>.primary-menu-container,.is-IE.is-dark-theme.primary-navigation-open .menu-button-container{background-color:#000}
+}@-webkit-keyframes MJWedding-close-button-transition{from{opacity:0}
+to{opacity:1}
+}@keyframes MJWedding-close-button-transition{from{opacity:0}
+to{opacity:1}
 }@-webkit-keyframes bounce{0%,20%,50%,80%,100%{-webkit-transform:translateY(0);transform:translateY(0);transform:translateY(0)}
 40%{-webkit-transform:translateY(-30px);transform:translateY(-30px);transform:translateY(-30px)}
 60%{-webkit-transform:translateY(-15px);transform:translateY(-15px);transform:translateY(-15px)}
@@ -851,8 +862,4 @@ main>article.post-2{padding:0 !important}
 }@keyframes bounce{0%,20%,50%,80%,100%{-webkit-transform:translateY(0);transform:translateY(0);transform:translateY(0);transform:translateY(0)}
 40%{-webkit-transform:translateY(-30px);transform:translateY(-30px);transform:translateY(-30px);transform:translateY(-30px)}
 60%{-webkit-transform:translateY(-15px);transform:translateY(-15px);transform:translateY(-15px);transform:translateY(-15px)}
-}@-webkit-keyframes MJWedding-close-button-transition{from{opacity:0}
-to{opacity:1}
-}@keyframes MJWedding-close-button-transition{from{opacity:0}
-to{opacity:1}
 }
