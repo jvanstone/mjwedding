@@ -7,7 +7,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package MJWedding
- * @subpackage  mj_wedding
+ * @subpackage  mjwedding
  * @since 1.0.0
  */
 
@@ -23,16 +23,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
-<?php do_action('mjwedding_before_site'); //Hooked: vonline_preloader() ?>
-
-<?php 
-// change the text backdrop.
-if ( is_front_page() ) :
-	$style = 'background: url(' . get_template_directory_uri() . '/assets/img/FrontPageTextBack.png) center top no-repeat';
-else :
-	$style = 'background: #FFF3F4;';
-endif;
-?>
+<?php do_action( 'mjwedding_before_site' ); // Hooked: vonline_preloader(). ?>
 
 <div id="page" class="style" >
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'mjwedding' ); ?></a>
@@ -41,4 +32,8 @@ endif;
 
 	<div id="content" class="site-content" >
 		<div id="primary" class="content-area" >
-			<main id="main" class="site-main" role="main" style="<?php esc_html_e( $style ); ?>">
+		<?php if ( is_front_page() ) : ?>
+			<main id="main" class="site-main" role="main" style="background: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/FrontPageTextBack.png') center top no-repeat">		
+		<?php else : ?>
+			<main id="main" class="site-main" role="main" style="background: #FFF3F4;">
+		<?php endif; ?>

@@ -9,12 +9,12 @@ if (window.NodeList && !NodeList.prototype.forEach) {
     };
 }
 
-var mjwedding = mjwedding || {};
+var MJWedding = MJWedding || {};
 
 /**
  * Back to top
  */
- mjwedding.backToTop = {
+ MJWedding.backToTop = {
 	init: function() {
 		this.displayButton();	
 	},
@@ -51,7 +51,7 @@ var mjwedding = mjwedding || {};
 /**
  * Remove preloader
  */
- mjwedding.removePreloader = {
+ MJWedding.removePreloader = {
 	init: function() {
 		this.remove();	
 	},
@@ -81,8 +81,8 @@ var mjwedding = mjwedding || {};
 }
 
 mjweddingDomReady( function() {
-    mjwedding.backToTop.init();
-    mjwedding.removePreloader.init();
-    //mjwedding.stickyMenu.init();
-	//mjwedding.mobileMenu.init();
+    MJWedding.backToTop.init();
+    MJWedding.removePreloader.init();
+    //MJWedding.stickyMenu.init();
+	//MJWedding.mobileMenu.init();
 } );

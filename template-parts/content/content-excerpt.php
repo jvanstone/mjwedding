@@ -5,7 +5,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package MJWedding
- * @subpackage  mj_wedding
+ * @subpackage  mjwedding
  * @since 1.0.0
  */
 
@@ -20,6 +20,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer default-max-width">
-		<?php mj_wedding_entry_meta_footer(); ?>
+		<?php mjwedding_entry_meta_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-${ID} -->

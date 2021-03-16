@@ -3,7 +3,7 @@
  * Displays the site header.
  *
  * @package MJWedding
- * @subpackage  mj_wedding
+ * @subpackage  mjwedding
  * @since 1.0.0
  */
 
@@ -14,8 +14,9 @@ $wrapper_classes .= has_nav_menu( 'primary' ) ? ' has-menu' : '';
 ?>
 
 <header id="masthead" class="<?php echo esc_attr( $wrapper_classes ); ?>" role="banner">
-	<?php //not using site branding on this site ?>
-	<?php //get_template_part( 'template-parts/header/site-branding' ); ?>
+	<?php // not using site branding on this site. ?>
+	<?php // get_template_part( 'template-parts/header/site-branding' ); Hiding the call. ?>
 	<?php get_template_part( 'template-parts/header/site-nav' ); ?>
 
 </header><!-- #masthead -->
+

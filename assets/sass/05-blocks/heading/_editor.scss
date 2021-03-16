@@ -28,31 +28,6 @@ h6,
 		line-height: var(--wp--typography--line-height, --global--line-height-body);
 	}
 }
-
-.h4 {
-
-	font-family: var(--global--font-secondary);
-	font-size: var(--heading--font-size-h4);
-	font-weight: var(--heading--font-weight);
-	letter-spacing: var(--heading--letter-spacing-h4);
-	line-height: var(--heading--line-height-h4);
-	font-variant: small-caps;
-		
-	&::before {
-		font-family: var(--global--font-secondary);
-		margin-right: 5px;
-		content: '~';
-
-	}
-
-	&::after {
-		margin-left: 5px;
-		content: '~';
-		
-	} 
-}
-
-
 .wp-block-heading h1,
 h1,
 .h1 {
@@ -80,10 +55,25 @@ h3,
 .wp-block-heading h4,
 h4,
 .h4 {
+	font-family: var(--global--font-secondary);
 	font-size: var(--heading--font-size-h4);
-	font-weight: var(--heading--font-weight-strong);
+	font-weight: var(--heading--font-weight);
 	letter-spacing: var(--heading--letter-spacing-h4);
 	line-height: var(--heading--line-height-h4);
+	font-variant: small-caps;
+		
+	&::before {
+		font-family: var(--global--font-secondary);
+		margin-right: 5px;
+		content: '~';
+
+	}
+
+	&::after {
+		margin-left: 5px;
+		content: '~';
+		
+	} 
 }
 
 .wp-block-heading h5,

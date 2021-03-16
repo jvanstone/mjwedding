@@ -3,17 +3,17 @@
  * Customizer settings for this theme.
  *
  * @package MJWedding
- * @subpackage  mj_wedding
+ * @subpackage  mjwedding
  * @since 1.0.0
  */
 
-if ( ! class_exists( 'MJ_Wedding_Customize' ) ) {
+if ( ! class_exists( 'MJWedding_Customize' ) ) {
 	/**
 	 * Customizer Settings.
 	 *
 	 * @since 1.0.0
 	 */
-	class MJ_Wedding_Customize {
+	class MJWedding_Customize {
 
 		/**
 		 * Constructor. Instantiate the object.
@@ -118,10 +118,10 @@ if ( ! class_exists( 'MJ_Wedding_Customize' ) ) {
 
 			// Background color.
 			// Include the custom control class.
-			include_once get_theme_file_path( 'classes/class-mj-wedding-customize-color-control.php' ); // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
+			include_once get_theme_file_path( 'classes/class-mjwedding-customize-color-control.php' ); // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 
 			// Register the custom control.
-			$wp_customize->register_control_type( 'MJ_Wedding_Customize_Color_Control' );
+			$wp_customize->register_control_type( 'MJWedding_Customize_Color_Control' );
 
 			// Get the palette from theme-supports.
 			$palette = get_theme_support( 'editor-color-palette' );
@@ -136,7 +136,7 @@ if ( ! class_exists( 'MJ_Wedding_Customize' ) ) {
 
 			// Add the control. Overrides the default background-color control.
 			$wp_customize->add_control(
-				new MJ_Wedding_Customize_Color_Control(
+				new MJWedding_Customize_Color_Control(
 					$wp_customize,
 					'background_color',
 					array(

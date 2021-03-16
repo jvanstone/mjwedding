@@ -5,18 +5,18 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package MJWedding
- * @subpackage  mj_wedding
+ * @subpackage  mjwedding
  * @since 1.0.0
  */
 
 $content = get_the_content();
 
 if ( has_block( 'core/audio', $content ) ) {
-	mj_wedding_print_first_instance_of_block( 'core/audio', $content );
+	mjwedding_print_first_instance_of_block( 'core/audio', $content );
 } elseif ( has_block( 'core/embed', $content ) ) {
-	mj_wedding_print_first_instance_of_block( 'core/embed', $content );
+	mjwedding_print_first_instance_of_block( 'core/embed', $content );
 } else {
-	mj_wedding_print_first_instance_of_block( 'core-embed/*', $content );
+	mjwedding_print_first_instance_of_block( 'core-embed/*', $content );
 }
 
 // Add the excerpt.

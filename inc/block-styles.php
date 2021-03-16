@@ -5,7 +5,7 @@
  * @link https://developer.wordpress.org/reference/functions/register_block_style/
  *
  * @package MJWedding
- * @subpackage  mj_wedding
+ * @subpackage  mjwedding
  * @since 1.0.0
  */
 
@@ -17,12 +17,12 @@ if ( function_exists( 'register_block_style' ) ) {
 	 *
 	 * @return void
 	 */
-	function mj_wedding_register_block_styles() {
+	function mjwedding_register_block_styles() {
 		// Columns: Overlap.
 		register_block_style(
 			'core/columns',
 			array(
-				'name'  => 'mjwedding-columns-overlap',
+				'name'  => 'MJWedding-columns-overlap',
 				'label' => esc_html__( 'Overlap', 'mjwedding' ),
 			)
 		);
@@ -31,7 +31,7 @@ if ( function_exists( 'register_block_style' ) ) {
 		register_block_style(
 			'core/cover',
 			array(
-				'name'  => 'mjwedding-border',
+				'name'  => 'MJWedding-border',
 				'label' => esc_html__( 'Borders', 'mjwedding' ),
 			)
 		);
@@ -40,7 +40,7 @@ if ( function_exists( 'register_block_style' ) ) {
 		register_block_style(
 			'core/group',
 			array(
-				'name'  => 'mjwedding-border',
+				'name'  => 'MJWedding-border',
 				'label' => esc_html__( 'Borders', 'mjwedding' ),
 			)
 		);
@@ -49,7 +49,7 @@ if ( function_exists( 'register_block_style' ) ) {
 		register_block_style(
 			'core/image',
 			array(
-				'name'  => 'mjwedding-border',
+				'name'  => 'MJWedding-border',
 				'label' => esc_html__( 'Borders', 'mjwedding' ),
 			)
 		);
@@ -58,7 +58,7 @@ if ( function_exists( 'register_block_style' ) ) {
 		register_block_style(
 			'core/image',
 			array(
-				'name'  => 'mjwedding-image-frame',
+				'name'  => 'MJWedding-image-frame',
 				'label' => esc_html__( 'Frame', 'mjwedding' ),
 			)
 		);
@@ -67,7 +67,7 @@ if ( function_exists( 'register_block_style' ) ) {
 		register_block_style(
 			'core/latest-posts',
 			array(
-				'name'  => 'mjwedding-latest-posts-dividers',
+				'name'  => 'MJWedding-latest-posts-dividers',
 				'label' => esc_html__( 'Dividers', 'mjwedding' ),
 			)
 		);
@@ -76,7 +76,7 @@ if ( function_exists( 'register_block_style' ) ) {
 		register_block_style(
 			'core/latest-posts',
 			array(
-				'name'  => 'mjwedding-latest-posts-borders',
+				'name'  => 'MJWedding-latest-posts-borders',
 				'label' => esc_html__( 'Borders', 'mjwedding' ),
 			)
 		);
@@ -85,7 +85,7 @@ if ( function_exists( 'register_block_style' ) ) {
 		register_block_style(
 			'core/media-text',
 			array(
-				'name'  => 'mjwedding-border',
+				'name'  => 'MJWedding-border',
 				'label' => esc_html__( 'Borders', 'mjwedding' ),
 			)
 		);
@@ -94,7 +94,7 @@ if ( function_exists( 'register_block_style' ) ) {
 		register_block_style(
 			'core/separator',
 			array(
-				'name'  => 'mjwedding-separator-thick',
+				'name'  => 'MJWedding-separator-thick',
 				'label' => esc_html__( 'Thick', 'mjwedding' ),
 			)
 		);
@@ -103,10 +103,10 @@ if ( function_exists( 'register_block_style' ) ) {
 		register_block_style(
 			'core/social-links',
 			array(
-				'name'  => 'mjwedding-social-icons-color',
+				'name'  => 'MJWedding-social-icons-color',
 				'label' => esc_html__( 'Dark gray', 'mjwedding' ),
 			)
 		);
 	}
-	add_action( 'init', 'mj_wedding_register_block_styles' );
+	add_action( 'init', 'mjwedding_register_block_styles' );
 }

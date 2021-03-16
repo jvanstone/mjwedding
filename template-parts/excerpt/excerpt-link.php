@@ -5,14 +5,14 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package MJWedding
- * @subpackage  mj_wedding
+ * @subpackage  mjwedding
  * @since 1.0.0
  */
 
 // Print the 1st instance of a paragraph block. If none is found, print the content.
 if ( has_block( 'core/paragraph', get_the_content() ) ) {
 
-	mj_wedding_print_first_instance_of_block( 'core/paragraph', get_the_content() );
+	mjwedding_print_first_instance_of_block( 'core/paragraph', get_the_content() );
 } else {
 
 	the_content();

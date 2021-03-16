@@ -8,7 +8,7 @@
  * @link https://developer.wordpress.org/reference/functions/get_search_form/
  *
  * @package MJWedding
- * @subpackage  mj_wedding
+ * @subpackage  mjwedding
  * @since 1.0.0
  */
 

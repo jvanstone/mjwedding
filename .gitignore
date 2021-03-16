@@ -16,7 +16,7 @@ node_modules/
 *.tar
 *.zip
 *.tgz
-*.map
+
 
 # Logs and databases #
 ######################
@@ -40,13 +40,15 @@ Thumbs.db
 ##########
 **/.sass-cache
 **/.sass-cache/*
-**/.map
+**/.sass-cache/*.map
 
 # Composer #
 ##########
 !assets/js/vendor/
 wpcs/
 /vendor/
+composer.json
+composer.lock
 
 # Bower #
 ##########
@@ -66,3 +68,7 @@ assets/bower_components/*
 .idea/
 library/vendors/composer
 assets/img/.DS_Store
+
+# WPGulp Files #
+wpgulp.config.js
+gulpfile.babel.js

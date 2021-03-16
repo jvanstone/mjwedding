@@ -3,7 +3,7 @@
  * SVG Icons class
  *
  * @package MJWedding
- * @subpackage  mj_wedding
+ * @subpackage  mjwedding
  * @since 1.0.0
  */
 
@@ -19,7 +19,7 @@
  *
  * @since 1.0.0
  */
-class mj_wedding_SVG_Icons {
+class MJWedding_SVG_Icons {
 
 	/**
 	 * User Interface icons – svg sources.
@@ -178,7 +178,7 @@ class mj_wedding_SVG_Icons {
 		 *
 		 * @param array $arr Array of icons.
 		 */
-		$arr = apply_filters( "mj_wedding_svg_icons_{$group}", $arr );
+		$arr = apply_filters( "mjwedding_svg_icons_{$group}", $arr );
 
 		$svg = '';
 		if ( array_key_exists( $icon, $arr ) ) {
@@ -221,7 +221,7 @@ class mj_wedding_SVG_Icons {
 			 *
 			 * @param array $social_icons_map Array of default social icons.
 			 */
-			$map = apply_filters( 'mj_wedding_social_icons_map', self::$social_icons_map );
+			$map = apply_filters( 'mjwedding_social_icons_map', self::$social_icons_map );
 
 			/**
 			 * Filters M & J Wedding's array of social icons.
@@ -230,7 +230,7 @@ class mj_wedding_SVG_Icons {
 			 *
 			 * @param array $social_icons Array of default social icons.
 			 */
-			$social_icons = apply_filters( 'mj_wedding_svg_icons_social', self::$social_icons );
+			$social_icons = apply_filters( 'mjwedding_svg_icons_social', self::$social_icons );
 
 			foreach ( array_keys( $social_icons ) as $icon ) {
 				$domains            = array_key_exists( $icon, $map ) ? $map[ $icon ] : array( sprintf( '%s.com', $icon ) );

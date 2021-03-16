@@ -3,14 +3,14 @@
  * Custom Colors Class
  *
  * @package MJWedding
- * @subpackage  mj_wedding
+ * @subpackage  mjwedding
  * @since 1.0.0
  */
 
 /**
  * This class is in charge of color customization via the Customizer.
  */
-class MJ_Wedding_Custom_Colors {
+class MJWedding_Custom_Colors {
 
 	/**
 	 * Instantiate the object.
@@ -95,7 +95,7 @@ class MJ_Wedding_Custom_Colors {
 	 */
 	public function custom_color_variables() {
 		if ( 'd1e4dd' !== strtolower( get_theme_mod( 'background_color', 'D1E4DD' ) ) ) {
-			wp_add_inline_style( 'mj_wedding-style', $this->generate_custom_color_variables() );
+			wp_add_inline_style( 'mjwedding-style', $this->generate_custom_color_variables() );
 		}
 	}
 
@@ -110,7 +110,7 @@ class MJ_Wedding_Custom_Colors {
 	 */
 	public function editor_custom_color_variables() {
 		wp_enqueue_style(
-			'mj_wedding-custom-color-overrides',
+			'mjwedding-custom-color-overrides',
 			get_theme_file_uri( 'assets/css/custom-color-overrides.css' ),
 			array(),
 			(string) filemtime( get_theme_file_path( 'assets/css/custom-color-overrides.css' ) )
@@ -118,7 +118,7 @@ class MJ_Wedding_Custom_Colors {
 
 		$background_color = get_theme_mod( 'background_color', 'FFF3F4' );
 		if ( 'FFF3F4' !== strtolower( $background_color ) ) {
-			wp_add_inline_style( 'mj_wedding-custom-color-overrides', $this->generate_custom_color_variables( 'editor' ) );
+			wp_add_inline_style( 'mjwedding-custom-color-overrides', $this->generate_custom_color_variables( 'editor' ) );
 		}
 	}
 

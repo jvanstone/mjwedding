@@ -3,7 +3,7 @@
  * The template for displaying image attachments
  *
  * @package MJWedding
- * @subpackage  mj_wedding
+ * @subpackage  mjwedding
  * @since 1.0.0
  */
 
@@ -26,7 +26,7 @@ while ( have_posts() ) {
 				 *
 				 * @param string $image_size Image size. Default 'large'.
 				 */
-				$image_size = apply_filters( 'mj_wedding_attachment_size', 'full' );
+				$image_size = apply_filters( 'mjwedding_attachment_size', 'full' );
 				echo wp_get_attachment_image( get_the_ID(), $image_size );
 				?>
 

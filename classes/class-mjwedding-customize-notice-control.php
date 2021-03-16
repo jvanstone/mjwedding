@@ -1,9 +1,9 @@
 <?php
 /**
- * Customize API: MJ_Wedding_Customize_Notice_Control class
+ * Customize API: MJWedding_Customize_Notice_Control class
  *
  * @package MJWedding
- * @subpackage  mj_wedding
+ * @subpackage  mjwedding
  * @since 1.0.0
  */
 
@@ -14,8 +14,7 @@
  *
  * @see WP_Customize_Control
  */
-class
-MJ_Wedding_Customize_Notice_Control extends WP_Customize_Control {
+class MJWedding_Customize_Notice_Control extends WP_Customize_Control {
 	/**
 	 * The control type.
 	 *
@@ -23,7 +22,7 @@ MJ_Wedding_Customize_Notice_Control extends WP_Customize_Control {
 	 *
 	 * @var string
 	 */
-	public $type = 'mj_wedding-notice';
+	public $type = 'mjwedding-notice';
 
 	/**
 	 * Renders the control content.
@@ -40,7 +39,7 @@ MJ_Wedding_Customize_Notice_Control extends WP_Customize_Control {
 		?>
 		<div class="notice notice-warning">
 			<p><?php esc_html_e( 'To access the Dark Mode settings, select a light background color.', 'mjwedding' ); ?></p>
-			<p><a href="https://wordpress.org/support/article/mj_wedding/">
+			<p><a href="https://wordpress.org/support/article/mjwedding/">
 				<?php esc_html_e( 'Learn more about Dark Mode.', 'mjwedding' ); ?>
 			</a></p>
 		</div>

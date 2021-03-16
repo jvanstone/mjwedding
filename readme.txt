@@ -1,5 +1,5 @@
 === M & J Wedding ===
-Contributors: vjstereo, wordpressdotorg
+Contributors: vanstoneonline, wordpressdotorg
 Requires at least: 5.3
 Tested up to: 5.6
 Requires PHP: 5.6

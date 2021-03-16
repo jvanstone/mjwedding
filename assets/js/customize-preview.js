@@ -7,7 +7,7 @@
 				isDark = 127 > lum,
 				textColor = ! isDark ? 'var(--global--color-dark-gray)' : 'var(--global--color-light-gray)',
 				tableColor = ! isDark ? 'var(--global--color-light-gray)' : 'var(--global--color-dark-gray)',
-				stylesheetID = 'mjwedding-customizer-inline-styles',
+				stylesheetID = 'MJWedding-customizer-inline-styles',
 				stylesheet,
 				styles;
 
@@ -39,7 +39,7 @@
 			styles = '';
 			// If the stylesheet doesn't exist, create it and append it to <head>.
 			if ( ! stylesheet.length ) {
-				jQuery( '#mj_wedding-style-inline-css' ).after( '<style id="' + stylesheetID + '"></style>' );
+				jQuery( '#mjwedding-style-inline-css' ).after( '<style id="' + stylesheetID + '"></style>' );
 				stylesheet = jQuery( '#' + stylesheetID );
 			}
 

@@ -59,7 +59,7 @@
 					display: flex;
 
 					.has-logo.has-title-and-tagline & {
-						animation-name: mjwedding-close-button-transition;
+						animation-name: MJWedding-close-button-transition;
 						animation-duration: 0.3s;
 					}
 				}
@@ -554,7 +554,7 @@
 }
 
 // Close button animation for when a custom logo is present.
-@keyframes mjwedding-close-button-transition {
+@keyframes MJWedding-close-button-transition {
 
 	from {
 		opacity: 0;

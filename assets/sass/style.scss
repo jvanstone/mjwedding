@@ -74,8 +74,12 @@
  * Color Palette........Classes for the color palette colors.
  * Editor Font Sizes....Editor Font Sizes.
  * Measure..............The width of a line of text, in characters.
+ *
+ * ADD-ONS
+ * Pre-loaer............Prelaoder while page loads
+ * Top Button...........Button to take user to the top 
  */
-// Print................Print styles
+
 
 /* Categories 01 to 03 are the basics. */
 @import "01-settings/fonts";
@@ -114,10 +118,15 @@
 @import "06-components/footer-navigation";
 @import "06-components/pagination";
 @import "06-components/widgets";
-//@import "06-components/topButton.scss";
 
 /* Category 07 is for any utility classes that are not assigned to a specific component. */
 @import "07-utilities/a11y";
 @import "07-utilities/color-palette";
 @import "07-utilities/measure";
 @import "07-utilities/ie";
+
+
+
+/* Category 08 is for any add-ons for the theme. */
+@import "08-add-ons/go-top.scss";
+@import "08-add-ons/pre-loader.scss";

@@ -4,7 +4,7 @@
  *
  * @category   WordPress_Theme
  * @package    MJWedding
- * @subpackage mj_wedding
+ * @subpackage mjwedding
  * @author     Vanstone Online <jason@vanstoneonline.com>
  * @license    GPL 3.0 http://www.gnu.org/licenses/gpl-3.0.html
  * @link       https://developer.wordpress.org/themes/basics/template-hierarchy/
@@ -30,7 +30,7 @@ $description = get_the_archive_description();
 		<?php get_template_part( 'template-parts/content/content', get_theme_mod( 'display_excerpt_or_full_post', 'excerpt' ) ); ?>
 	<?php endwhile; ?>
 
-	<?php mj_wedding_the_posts_navigation(); ?>
+	<?php mjwedding_the_posts_navigation(); ?>
 
 <?php else : ?>
 	<?php get_template_part( 'template-parts/content/content-none' ); ?>

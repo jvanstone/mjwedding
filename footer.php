@@ -7,7 +7,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package MJWedding
- * @subpackage  mj_wedding
+ * @subpackage  mjwedding
  * @since 1.0.0
  */
 
@@ -59,7 +59,12 @@
 				printf(
 					/* translators: %s: WordPress. */
 					esc_html__( 'Proudly powered by %s.', 'mjwedding' ),
-					'<a href="' . esc_attr__( 'https://wordpress.org/', 'mjwedding' ) . '">WordPress</a>'
+					'<a href="' . esc_attr__( 'https://wordpress.org/', 'mjwedding' ) . '"  target="_blank">WordPress</a>'
+				);
+				printf(
+					/* translators: %s: WordPress. */
+					esc_html__( 'Made by %s.', 'mjwedding' ),
+					'<a href="' . esc_attr__( 'https://vanstoneonline.com/', 'mjwedding' ) . '" target="_blank">Vanstone Online</a>'
 				);
 				?>
 			</div><!-- .powered-by -->

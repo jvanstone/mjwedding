@@ -8,7 +8,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package MJWedding
- * @subpackage  mj_wedding
+ * @subpackage  mjwedding
  * @since 1.0.0
  */
 
@@ -21,24 +21,25 @@ if ( post_password_required() ) {
 	return;
 }
 
-$mj_wedding_comment_count = get_comments_number();
+$mjwedding_comment_count = get_comments_number();
 ?>
 
 <div id="comments" class="comments-area default-max-width <?php echo get_option( 'show_avatars' ) ? 'show-avatars' : ''; ?>">
 
 	<?php
-	if ( have_comments() ) :
+	if ( have_comments()
+	) :
 		;
 		?>
 		<h2 class="comments-title">
-			<?php if ( '1' === $mj_wedding_comment_count ) : ?>
+			<?php if ( '1' === $mjwedding_comment_count ) : ?>
 				<?php esc_html_e( '1 comment', 'mjwedding' ); ?>
 			<?php else : ?>
 				<?php
 				printf(
 					/* translators: %s: comment count number. */
-					esc_html( _nx( '%s comment', '%s comments', $mj_wedding_comment_count, 'Comments title', 'mjwedding' ) ),
-					esc_html( number_format_i18n( $mj_wedding_comment_count ) )
+					esc_html( _nx( '%s comment', '%s comments', $mjwedding_comment_count, 'Comments title', 'mjwedding' ) ),
+					esc_html( number_format_i18n( $mjwedding_comment_count ) )
 				);
 				?>
 			<?php endif; ?>
@@ -64,13 +65,13 @@ $mj_wedding_comment_count = get_comments_number();
 				'mid_size'           => 0,
 				'prev_text'          => sprintf(
 					'%s <span class="nav-prev-text">%s</span>',
-					is_rtl() ? mj_wedding_get_icon_svg( 'ui', 'arrow_right' ) : mj_wedding_get_icon_svg( 'ui', 'arrow_left' ),
+					is_rtl() ? mjwedding_get_icon_svg( 'ui', 'arrow_right' ) : mjwedding_get_icon_svg( 'ui', 'arrow_left' ),
 					esc_html__( 'Older comments', 'mjwedding' )
 				),
 				'next_text'          => sprintf(
 					'<span class="nav-next-text">%s</span> %s',
 					esc_html__( 'Newer comments', 'mjwedding' ),
-					is_rtl() ? mj_wedding_get_icon_svg( 'ui', 'arrow_left' ) : mj_wedding_get_icon_svg( 'ui', 'arrow_right' )
+					is_rtl() ? mjwedding_get_icon_svg( 'ui', 'arrow_left' ) : mjwedding_get_icon_svg( 'ui', 'arrow_right' )
 				),
 			)
 		);

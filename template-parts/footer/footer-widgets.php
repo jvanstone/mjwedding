@@ -3,10 +3,9 @@
  * Displays the footer widget area.
  *
  * @package MJWedding
- * @subpackage  mj_wedding
+ * @subpackage  mjwedding
  * @since 1.0.0
  */
-
 
 if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
 

@@ -42,12 +42,12 @@ img {
 }
 
 // Block Styles
-.wp-block-image.is-style-mjwedding-border img,
-.wp-block-image.is-style-mjwedding-image-frame img {
+.wp-block-image.is-style-MJWedding-border img,
+.wp-block-image.is-style-MJWedding-image-frame img {
 	border: calc(3 * var(--separator--height)) solid var(--global--color-border);
 }
 
-.wp-block-image.is-style-mjwedding-image-frame img {
+.wp-block-image.is-style-MJWedding-image-frame img {
 	padding: var(--global--spacing-unit);
 }
 

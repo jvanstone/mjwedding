@@ -1,7 +1,7 @@
 /* global mjweddingIsDarkMode, setTimeout */
 
 // Check the color scheme preference and inject the classes if necessary.
-if ( document.body.classList.contains( 'mjwedding-supports-dark-theme' ) ) {
+if ( document.body.classList.contains( 'MJWedding-supports-dark-theme' ) ) {
 	mjweddingDarkModeEditorInit();
 }
 

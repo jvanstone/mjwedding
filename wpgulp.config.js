@@ -122,7 +122,7 @@ const translationDestination = './languages';
 const packageName = 'MJWedding';
 
 // Where can users report bugs.
-const bugReport = 'https://AhmadAwais.com/contact/';
+const bugReport = 'jason@vanstoneoneline.com';
 
 // Last translator Email ID.
 const lastTranslator = '';

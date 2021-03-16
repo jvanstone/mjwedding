@@ -3,7 +3,7 @@
  * Customize API: WP_Customize_Color_Control class
  *
  * @package MJWedding
- * @subpackage  mj_wedding
+ * @subpackage  mjwedding
  * @since 1.0.0
  */
 
@@ -14,7 +14,7 @@
  *
  * @see WP_Customize_Control
  */
-class MJ_Wedding_Customize_Color_Control extends WP_Customize_Color_Control {
+class MJWedding_Customize_Color_Control extends WP_Customize_Color_Control {
 	/**
 	 * The control type.
 	 *
@@ -22,7 +22,7 @@ class MJ_Wedding_Customize_Color_Control extends WP_Customize_Color_Control {
 	 *
 	 * @var string
 	 */
-	public $type = 'mj-wedding-color';
+	public $type = 'mjwedding-color';
 
 	/**
 	 * Colorpicker palette

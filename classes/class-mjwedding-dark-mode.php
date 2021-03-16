@@ -3,14 +3,14 @@
  * Dark Mode Class
  *
  * @package MJWedding
- * @subpackage  mj_wedding
+ * @subpackage  mjwedding
  * @since 1.0.0
  */
 
 /**
  * This class is in charge of Dark Mode.
  */
-class MJ_Wedding_Dark_Mode {
+class MJWedding_Dark_Mode {
 
 	/**
 	 * Instantiate the object.
@@ -61,15 +61,15 @@ class MJ_Wedding_Dark_Mode {
 		}
 		$background_color            = get_theme_mod( 'background_color', 'D1E4DD' );
 		$should_respect_color_scheme = get_theme_mod( 'respect_user_color_preference', false );
-		if ( $should_respect_color_scheme && MJ_Wedding_Custom_Colors::get_relative_luminance_from_hex( $background_color ) > 127 ) {
+		if ( $should_respect_color_scheme && MJWedding_Custom_Colors::get_relative_luminance_from_hex( $background_color ) > 127 ) {
 			// Add Dark Mode variable overrides.
 			wp_add_inline_style(
-				'mj_wedding-custom-color-overrides',
+				'mjwedding-custom-color-overrides',
 				'.is-dark-theme.is-dark-theme .editor-styles-wrapper { --global--color-background: var(--global--color-dark-gray); --global--color-primary: var(--global--color-light-gray); --global--color-secondary: var(--global--color-light-gray); --button--color-text: var(--global--color-background); --button--color-text-hover: var(--global--color-secondary); --button--color-text-active: var(--global--color-secondary); --button--color-background: var(--global--color-secondary); --button--color-background-active: var(--global--color-background); --global--color-border: #9ea1a7; }'
 			);
 		}
 		wp_enqueue_script(
-			'mjwedding-dark-mode-support-toggle',
+			'MJWedding-dark-mode-support-toggle',
 			get_template_directory_uri() . '/assets/js/dark-mode-toggler.js',
 			array(),
 			'1.0.0',
@@ -77,9 +77,9 @@ class MJ_Wedding_Dark_Mode {
 		);
 
 		wp_enqueue_script(
-			'mjwedding-editor-dark-mode-support',
+			'MJWedding-editor-dark-mode-support',
 			get_template_directory_uri() . '/assets/js/editor-dark-mode-support.js',
-			array( 'mjwedding-dark-mode-support-toggle' ),
+			array( 'MJWedding-dark-mode-support-toggle' ),
 			'1.0.0',
 			true
 		);
@@ -102,7 +102,7 @@ class MJ_Wedding_Dark_Mode {
 		if ( is_rtl() ) {
 			$url = get_template_directory_uri() . '/assets/css/style-dark-mode-rtl.css';
 		}
-		wp_enqueue_style( 'tt1-dark-mode', $url, array( 'mj_wedding-style' ), wp_get_theme()->get( 'Version' ) ); // @phpstan-ignore-line. Version is always a string.
+		wp_enqueue_style( 'tt1-dark-mode', $url, array( 'mjwedding-style' ), wp_get_theme()->get( 'Version' ) ); // @phpstan-ignore-line. Version is always a string.
 	}
 
 	/**
@@ -119,9 +119,9 @@ class MJ_Wedding_Dark_Mode {
 			return;
 		}
 		wp_enqueue_script(
-			'mjwedding-customize-controls',
+			'MJWedding-customize-controls',
 			get_template_directory_uri() . '/assets/js/customize.js',
-			array( 'customize-base', 'customize-controls', 'underscore', 'jquery', 'mjwedding-customize-helpers' ),
+			array( 'customize-base', 'customize-controls', 'underscore', 'jquery', 'MJWedding-customize-helpers' ),
 			'1.0.0',
 			true
 		);
@@ -146,7 +146,7 @@ class MJ_Wedding_Dark_Mode {
 		}
 
 		// Custom notice control.
-		include_once get_theme_file_path( 'classes/class-mj-wedding-customize-notice-control.php' ); // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
+		include_once get_theme_file_path( 'classes/class-mjwedding-customize-notice-control.php' ); // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 
 		$wp_customize->add_setting(
 			'respect_user_color_preference_notice',
@@ -158,14 +158,14 @@ class MJ_Wedding_Dark_Mode {
 		);
 
 		$wp_customize->add_control(
-			new MJ_Wedding_Customize_Notice_Control(
+			new MJWedding_Customize_Notice_Control(
 				$wp_customize,
 				'respect_user_color_preference_notice',
 				array(
 					'section'         => 'colors',
 					'priority'        => 100,
 					'active_callback' => function() {
-						return 127 >= MJ_Wedding_Custom_Colors::get_relative_luminance_from_hex( get_theme_mod( 'background_color', 'D1E4DD' ) );
+						return 127 >= MJWedding_Custom_Colors::get_relative_luminance_from_hex( get_theme_mod( 'background_color', 'D1E4DD' ) );
 					},
 				)
 			)
@@ -186,7 +186,7 @@ class MJ_Wedding_Dark_Mode {
 		$description .= sprintf(
 			// translators: %s is the wordpress.org M & J Wedding support article URL.
 			__( 'Dark Mode is a device setting. If a visitor to your site requests it, your site will be shown with a dark background and light text. <a href="%s">Learn more about Dark Mode.</a>', 'mjwedding' ),
-			__( 'https://wordpress.org/support/article/mj_wedding/', 'mjwedding' )
+			__( 'https://wordpress.org/support/article/mjwedding/', 'mjwedding' )
 		);
 		$description .= '</p>';
 		$description .= '<p>' . __( 'Dark Mode can also be turned on and off with a button that you can find in the bottom right corner of the page.', 'mjwedding' ) . '</p>';
@@ -200,7 +200,7 @@ class MJ_Wedding_Dark_Mode {
 				'priority'        => 110,
 				'description'     => $description,
 				'active_callback' => function( $value ) {
-					return 127 < MJ_Wedding_Custom_Colors::get_relative_luminance_from_hex( get_theme_mod( 'background_color', 'D1E4DD' ) );
+					return 127 < MJWedding_Custom_Colors::get_relative_luminance_from_hex( get_theme_mod( 'background_color', 'D1E4DD' ) );
 				},
 			)
 		);
@@ -237,7 +237,7 @@ class MJ_Wedding_Dark_Mode {
 
 		$background_color            = get_theme_mod( 'background_color', 'D1E4DD' );
 		$should_respect_color_scheme = get_theme_mod( 'respect_user_color_preference', false );
-		if ( $should_respect_color_scheme && 127 <= MJ_Wedding_Custom_Colors::get_relative_luminance_from_hex( $background_color ) ) {
+		if ( $should_respect_color_scheme && 127 <= MJWedding_Custom_Colors::get_relative_luminance_from_hex( $background_color ) ) {
 			return ( $classes ) ? ' respect-color-scheme-preference' : 'respect-color-scheme-preference';
 		}
 
@@ -269,8 +269,8 @@ class MJ_Wedding_Dark_Mode {
 			$should_respect_color_scheme = get_theme_mod( 'respect_user_color_preference', false );
 			$background_color            = get_theme_mod( 'background_color', 'D1E4DD' );
 
-			if ( $should_respect_color_scheme && MJ_Wedding_Custom_Colors::get_relative_luminance_from_hex( $background_color ) > 127 ) {
-				$classes .= ' mjwedding-supports-dark-theme';
+			if ( $should_respect_color_scheme && MJWedding_Custom_Colors::get_relative_luminance_from_hex( $background_color ) > 127 ) {
+				$classes .= ' MJWedding-supports-dark-theme';
 			}
 		}
 
@@ -291,7 +291,7 @@ class MJ_Wedding_Dark_Mode {
 		return (
 			get_theme_mod( 'respect_user_color_preference', false ) &&
 			! $is_IE &&
-			127 <= MJ_Wedding_Custom_Colors::get_relative_luminance_from_hex( get_theme_mod( 'background_color', 'D1E4DD' ) )
+			127 <= MJWedding_Custom_Colors::get_relative_luminance_from_hex( get_theme_mod( 'background_color', 'D1E4DD' ) )
 		);
 	}
 

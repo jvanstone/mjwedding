@@ -4,17 +4,14 @@
  *
  * @category   Wordpress_Theme
  * @package    MJWedding
- * @subpackage mj_wedding
+ * @subpackage mjwedding
  * @author     Vanstone Online <jason@vanstoneonline.com>
  * @license    GPL 3.0 http://www.gnu.org/licenses/gpl-3.0.html
  * @link       vanstoneonline.com
  * @since      1.0.0
  */
 
-// Install the plugin Installer.
-require_once dirname( __FILE__ ) . '/inc/class-tgm-plugin-activation.php';
-
-if ( ! function_exists( 'mj_wedding_setup' ) ) {
+if ( ! function_exists( 'mjwedding_setup' ) ) {
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -26,7 +23,7 @@ if ( ! function_exists( 'mj_wedding_setup' ) ) {
 	 *
 	 * @return void
 	 */
-	function mj_wedding_setup() {
+	function mjwedding_setup() {
 		/*
 		* Make theme available for translation.
 		* Translations can be filed in the /languages/ directory.
@@ -126,7 +123,7 @@ if ( ! function_exists( 'mj_wedding_setup' ) ) {
 		// Add support for editor styles.
 		add_theme_support( 'editor-styles' );
 		$background_color = get_theme_mod( 'background_color', 'FFF3F4' );
-		if ( 127 > MJ_Wedding_Custom_Colors::get_relative_luminance_from_hex( $background_color ) ) {
+		if ( 127 > MJWedding_Custom_Colors::get_relative_luminance_from_hex( $background_color ) ) {
 			add_theme_support( 'dark-editor-style' );
 		}
 
@@ -196,7 +193,7 @@ if ( ! function_exists( 'mj_wedding_setup' ) ) {
 			'custom-background',
 			array(
 				'default-color' => 'FFF3F4',
-				'default-image'  => get_template_directory_uri() . '/assets/img/mjbackground.png',
+				'default-image' => get_template_directory_uri() . '/assets/img/mjbackground.png',
 			)
 		);
 
@@ -327,7 +324,7 @@ if ( ! function_exists( 'mj_wedding_setup' ) ) {
 		*/
 		if ( is_customize_preview() ) {
 			require get_template_directory() . '/inc/starter-content.php';
-			add_theme_support( 'starter-content', mj_wedding_get_starter_content() );
+			add_theme_support( 'starter-content', mjwedding_get_starter_content() );
 		}
 
 		// Add support for responsive embedded content.
@@ -347,7 +344,7 @@ if ( ! function_exists( 'mj_wedding_setup' ) ) {
 		add_theme_support( 'custom-units' );
 	}
 }
-add_action( 'after_setup_theme', 'mj_wedding_setup' );
+add_action( 'after_setup_theme', 'mjwedding_setup' );
 
 /**
  * Register widget area.
@@ -358,7 +355,7 @@ add_action( 'after_setup_theme', 'mj_wedding_setup' );
  *
  * @return void
  */
-function mj_wedding_widgets_init() {
+function mjwedding_widgets_init() {
 
 	register_sidebar(
 		array(
@@ -372,7 +369,7 @@ function mj_wedding_widgets_init() {
 		)
 	);
 }
-add_action( 'widgets_init', 'mj_wedding_widgets_init' );
+add_action( 'widgets_init', 'mjwedding_widgets_init' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -381,17 +378,17 @@ add_action( 'widgets_init', 'mj_wedding_widgets_init' );
  *
  * @since 1.0.0
  *
- * @global int $content_width Content width.
+ * @global int $mjwedding_content_width Content width.
  *
  * @return void
  */
-function mj_wedding_content_width() {
+function mjwedding_content_width() {
 	// This variable is intended to be overruled from themes.
 	// Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
 	// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
-	$GLOBALS['content_width'] = apply_filters( 'mj_wedding_content_width', 750 );
+	$GLOBALS['content_width'] = apply_filters( 'mjwedding_content_width', 750 );
 }
-add_action( 'after_setup_theme', 'mj_wedding_content_width', 0 );
+add_action( 'after_setup_theme', 'mjwedding_content_width', 0 );
 
 /**
  * Enqueue scripts and styles.
@@ -400,23 +397,23 @@ add_action( 'after_setup_theme', 'mj_wedding_content_width', 0 );
  *
  * @return void
  */
-function mj_wedding_scripts() {
+function mjwedding_scripts() {
 	// Note, the is_IE global variable is defined by WordPress and is used.
 	// to detect if the current browser is internet explorer.
 	global $is_IE;
 	if ( $is_IE ) {
 		// If IE 11 or below, use a flattened stylesheet with static values replacing CSS Variables.
-		wp_enqueue_style( 'mj-wedding-style', get_template_directory_uri() . '/assets/css/ie.css', array(), wp_get_theme()->get( 'Version' ) );
+		wp_enqueue_style( 'mjwedding-style', get_template_directory_uri() . '/assets/css/ie.css', array(), wp_get_theme()->get( 'Version' ) );
 	} else {
 		// If not IE, use the standard stylesheet.
-		wp_enqueue_style( 'mj-wedding-style', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
+		wp_enqueue_style( 'mjwedding-style', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
 	}
 
 	// RTL styles.
-	wp_style_add_data( 'mj-wedding-style', 'rtl', 'replace' );
+	wp_style_add_data( 'mjwedding-style', 'rtl', 'replace' );
 
 	// Print styles.
-	wp_enqueue_style( 'mj-wedding-print-style', get_template_directory_uri() . '/assets/css/print.css', array(), wp_get_theme()->get( 'Version' ), 'print' );
+	wp_enqueue_style( 'mjwedding-print-style', get_template_directory_uri() . '/assets/css/print.css', array(), wp_get_theme()->get( 'Version' ), 'print' );
 
 	// Threaded comment reply styles.
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -424,7 +421,7 @@ function mj_wedding_scripts() {
 	}
 
 	wp_register_script(
-		'mj-wedding-ie11-polyfills',
+		'mjwedding-ie11-polyfills',
 		get_template_directory_uri() . '/assets/js/polyfills.js',
 		array(),
 		wp_get_theme()->get( 'Version' ),
@@ -434,9 +431,9 @@ function mj_wedding_scripts() {
 	// Main navigation scripts.
 	if ( has_nav_menu( 'primary' ) ) {
 		wp_enqueue_script(
-			'mj-wedding-primary-navigation-script',
+			'mjwedding-primary-navigation-script',
 			get_template_directory_uri() . '/assets/js/primary-navigation.js',
-			array( 'mj-wedding-ie11-polyfills' ),
+			array( 'mjwedding-ie11-polyfills' ),
 			wp_get_theme()->get( 'Version' ),
 			true
 		);
@@ -444,24 +441,24 @@ function mj_wedding_scripts() {
 
 	// Responsive embeds script.
 	wp_enqueue_script(
-		'mj-wedding-responsive-embeds-script',
+		'mjwedding-responsive-embeds-script',
 		get_template_directory_uri() . '/assets/js/responsive-embeds.js',
-		array( 'mj-wedding-ie11-polyfills' ),
+		array( 'mjwedding-ie11-polyfills' ),
 		wp_get_theme()->get( 'Version' ),
 		true
 	);
 
 	// Responsive Pre-Loader and go-top to website.
 	wp_enqueue_script(
-		'mj-wedding-pre-loader-script',
+		'mjwedding-pre-loader-script',
 		get_template_directory_uri() . '/assets/js/functions.js',
-		array( 'mj-wedding-ie11-polyfills' ),
+		array( 'mjwedding-ie11-polyfills' ),
 		wp_get_theme()->get( 'Version' ),
 		true
 	);
 
 }
-add_action( 'wp_enqueue_scripts', 'mj_wedding_scripts' );
+add_action( 'wp_enqueue_scripts', 'mjwedding_scripts' );
 
 /**
  * Enqueue block editor script.
@@ -485,7 +482,7 @@ add_action( 'enqueue_block_editor_assets', 'mjwedding_block_editor_script' );
  *
  * @link https://git.io/vWdr2
  */
-function mj_wedding_skip_link_focus_fix() {
+function mjwedding_skip_link_focus_fix() {
 
 	// If SCRIPT_DEBUG is defined and true, print the unminified file.
 	if ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) {
@@ -501,7 +498,7 @@ function mj_wedding_skip_link_focus_fix() {
 	</script>
 	<?php
 }
-add_action( 'wp_print_footer_scripts', 'mj_wedding_skip_link_focus_fix' );
+add_action( 'wp_print_footer_scripts', 'mjwedding_skip_link_focus_fix' );
 
 /** Enqueue non-latin language styles
  *
@@ -509,21 +506,21 @@ add_action( 'wp_print_footer_scripts', 'mj_wedding_skip_link_focus_fix' );
  *
  * @return void
  */
-function mj_wedding_non_latin_languages() {
-	$custom_css = mj_wedding_get_non_latin_css( 'front-end' );
+function mjwedding_non_latin_languages() {
+	$custom_css = mjwedding_get_non_latin_css( 'front-end' );
 
 	if ( $custom_css ) {
-		wp_add_inline_style( 'mj-wedding-style', $custom_css );
+		wp_add_inline_style( 'mjwedding-style', $custom_css );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'mj_wedding_non_latin_languages' );
+add_action( 'wp_enqueue_scripts', 'mjwedding_non_latin_languages' );
 
 	// SVG Icons class.
-	require get_template_directory() . '/classes/class-mj-wedding-svg-icons.php';
+	require get_template_directory() . '/classes/class-mjwedding-svg-icons.php';
 
 	// Custom color classes.
-	require get_template_directory() . '/classes/class-mj-wedding-custom-colors.php';
-	new MJ_Wedding_Custom_Colors();
+	require get_template_directory() . '/classes/class-mjwedding-custom-colors.php';
+	new MJWedding_Custom_Colors();
 
 	// Enhance the theme by hooking into WordPress.
 	require get_template_directory() . '/inc/template-functions.php';
@@ -535,8 +532,8 @@ add_action( 'wp_enqueue_scripts', 'mj_wedding_non_latin_languages' );
 	require get_template_directory() . '/inc/template-tags.php';
 
 	// Customizer additions.
-	require get_template_directory() . '/classes/class-mj-wedding-customize.php';
-	new MJ_Wedding_Customize();
+	require get_template_directory() . '/classes/class-mjwedding-customize.php';
+	new MJWedding_Customize();
 
 	// Block Patterns.
 	require get_template_directory() . '/inc/block-patterns.php';
@@ -545,8 +542,8 @@ add_action( 'wp_enqueue_scripts', 'mj_wedding_non_latin_languages' );
 	require get_template_directory() . '/inc/block-styles.php';
 
 	// Dark Mode.
-	require_once get_template_directory() . '/classes/class-mj-wedding-dark-mode.php';
-	new MJ_Wedding_Dark_Mode();
+	require_once get_template_directory() . '/classes/class-mjwedding-dark-mode.php';
+	new MJWedding_Dark_Mode();
 
 /**
  * Enqueue scripts for the customizer preview.
@@ -612,51 +609,6 @@ function mjwedding_preloader() {
 }
 add_action( 'mjwedding_before_site', 'mjwedding_preloader' );
 
-/******
- * Get SVG code for specific theme icon
- * 
- * @since 1.0.0
- *
- *
- *
- */
-function mjwedding_get_svg_icon( $icon, $echo = false ) {
-	$svg_code = wp_kses( // From TwentTwenty. Keeps only allowed tags and attributes
-		mjwedding_SVG_Icons::get_svg_icon( $icon ),
-		array(
-			'svg'     => array(
-				'class'       => true,
-				'xmlns'       => true,
-				'width'       => true,
-				'height'      => true,
-				'viewbox'     => true,
-				'aria-hidden' => true,
-				'role'        => true,
-				'focusable'   => true,
-			),
-			'path'    => array(
-				'fill'      => true,
-				'fill-rule' => true,
-				'd'         => true,
-				'transform' => true,
-			),
-			'polygon' => array(
-				'fill'      => true,
-				'fill-rule' => true,
-				'points'    => true,
-				'transform' => true,
-				'focusable' => true,
-			),
-		)
-	);
-
-	if ( $echo !== false ) {
-		echo $svg_code; //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-	} else {
-		return $svg_code;
-	}
-}
-
 
 /**
  * Calculate classes for the main <html> element.
@@ -693,13 +645,10 @@ add_action( 'wp_footer', 'mjwedding_add_ie_class' );
 
 
 
+// Install the plugin Installer.
+require_once dirname( __FILE__ ) . '/classes/class-tgm-plugin-activation.php';
 /**
  * Register the required plugins for this theme.
- *
- * In this example, we register five plugins:
- * - one required with the TGMPA library
- * - two from an external source, one from an arbitrary source, one from a GitHub repository
- * - two from the .org repo, where one demonstrates the use of the `is_callable` argument
  *
  * The variables passed to the `tgmpa()` function should be:
  * - an array of plugin arrays;
@@ -732,27 +681,27 @@ function mjwedding_register_required_plugins() {
 
 	);
 
-		/*
-		* Array of configuration settings. Amend each line as needed.
-		*
-		* TGMPA will start providing localized text strings soon. If you already have translations of our standard
-		* strings available, please help us make TGMPA even better by giving us access to these translations or by
-		* sending in a pull-request with .po file(s) with the translations.
-		*
-		* Only uncomment the strings in the config array if you want to customize the strings.
-		*/
-		$config = array(
-		'id'              => 'tgmpa',                      // Unique ID for hashing notices for multiple instances of TGMPA.
-		'default_path'    => '',                             // Default absolute path to bundled plugins.
-		'menu'            => 'tgmpa-install-plugins', // Menu slug.
-		'parent_slug'     => 'themes.php',                // Parent menu slug.
-		'capability'      => 'edit_theme_options',     // Capability needed to view plugin install page, should be a capability associated with the parent menu used.
-		'has_notices'     => true,                          // Show admin notices or not.
-		'dismissable'     => true,                          // If false, a user cannot dismiss the nag message.
-		'dismiss_msg'     => '',                             // If 'dismissable' is false, this message will be output at top of nag.
-		'is_automatic'    => false,                         // Automatically activate plugins after installation or not.
-		'message'         => '',                             // Message to output right before the plugins table.
-		);
+	/*
+	* Array of configuration settings.
+	*
+	* TGMPA will start providing localized text strings soon. If you already have translations of our standard
+	* strings available, please help us make TGMPA even better by giving us access to these translations or by
+	* sending in a pull-request with .po file(s) with the translations.
+	*
+	* Only uncomment the strings in the config array if you want to customize the strings.
+	*/
+	$config = array(
+		'id'           => 'tgmpa',                 // Unique ID for hashing notices for multiple instances of TGMPA.
+		'default_path' => '',                      // Default absolute path to bundled plugins.
+		'menu'         => 'tgmpa-install-plugins', // Menu slug.
+		'parent_slug'  => 'themes.php',            // Parent menu slug.
+		'capability'   => 'edit_theme_options',    // Capability needed to view plugin install page, should be a capability associated with the parent menu used.
+		'has_notices'  => true,                    // Show admin notices or not.
+		'dismissable'  => true,                    // If false, a user cannot dismiss the nag message.
+		'dismiss_msg'  => '',                      // If 'dismissable' is false, this message will be output at top of nag.
+		'is_automatic' => false,                   // Automatically activate plugins after installation or not.
+		'message'      => '',                             // Message to output right before the plugins table.
+	);
 
 		tgmpa( $plugins, $config );
 }

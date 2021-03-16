@@ -4,7 +4,7 @@
  *
  * @category   WordPress_Theme
  * @package    MJWedding
- * @subpackage mj_wedding
+ * @subpackage mjwedding
  * @author     Vanstone Online <jason@vanstoneonline.com>
  * @license    GPL 3.0 http://www.gnu.org/licenses/gpl-3.0.html
  * @link       https://codex.wordpress.org/Creating_an_Error_404_Page

@@ -5,7 +5,7 @@
  * @link https://make.wordpress.org/core/2016/11/30/starter-content-for-themes-in-4-7/
  *
  * @package MJWedding
- * @subpackage  mj_wedding
+ * @subpackage  mjwedding
  * @since 1.0.0
  */
 
@@ -18,7 +18,7 @@
  *
  * @return array A filtered array of args for the starter_content.
  */
-function mj_wedding_get_starter_content() {
+function mjwedding_get_starter_content() {
 
 	// Define and register starter content to showcase the theme on new sites.
 	$starter_content = array(
@@ -37,8 +37,8 @@ function mj_wedding_get_starter_content() {
 					<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
 					<!-- /wp:spacer -->
 
-					<!-- wp:columns {"verticalAlignment":"center","align":"wide","className":"is-style-mjwedding-columns-overlap"} -->
-					<div class="wp-block-columns alignwide are-vertically-aligned-center is-style-mjwedding-columns-overlap"><!-- wp:column {"verticalAlignment":"center"} -->
+					<!-- wp:columns {"verticalAlignment":"center","align":"wide","className":"is-style-MJWedding-columns-overlap"} -->
+					<div class="wp-block-columns alignwide are-vertically-aligned-center is-style-MJWedding-columns-overlap"><!-- wp:column {"verticalAlignment":"center"} -->
 					<div class="wp-block-column is-vertically-aligned-center"><!-- wp:image {"align":"full","sizeSlug":"large"} -->
 					<figure class="wp-block-image alignfull size-large"><img src="' . esc_url( get_template_directory_uri() ) . '/assets/images/roses-tremieres-hollyhocks-1884.jpg" alt="' . esc_attr__( '&#8220;Roses Tremieres&#8221; by Berthe Morisot', 'mjwedding' ) . '"/></figure>
 					<!-- /wp:image -->
@@ -47,8 +47,8 @@ function mj_wedding_get_starter_content() {
 					<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
 					<!-- /wp:spacer -->
 
-					<!-- wp:image {"align":"full","sizeSlug":"large","className":"is-style-mjwedding-image-frame"} -->
-					<figure class="wp-block-image alignfull size-large is-style-mjwedding-image-frame"><img src="' . esc_url( get_template_directory_uri() ) . '/assets/images/in-the-bois-de-boulogne.jpg" alt="' . esc_attr__( '&#8220;In the Bois de Boulogne&#8221; by Berthe Morisot', 'mjwedding' ) . '"/></figure>
+					<!-- wp:image {"align":"full","sizeSlug":"large","className":"is-style-MJWedding-image-frame"} -->
+					<figure class="wp-block-image alignfull size-large is-style-MJWedding-image-frame"><img src="' . esc_url( get_template_directory_uri() ) . '/assets/images/in-the-bois-de-boulogne.jpg" alt="' . esc_attr__( '&#8220;In the Bois de Boulogne&#8221; by Berthe Morisot', 'mjwedding' ) . '"/></figure>
 					<!-- /wp:image --></div>
 					<!-- /wp:column -->
 
@@ -57,8 +57,8 @@ function mj_wedding_get_starter_content() {
 					<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
 					<!-- /wp:spacer -->
 
-					<!-- wp:image {"sizeSlug":"large","className":"alignfull size-full is-style-mjwedding-border"} -->
-					<figure class="wp-block-image size-large alignfull size-full is-style-mjwedding-border"><img src="' . esc_url( get_template_directory_uri() ) . '/assets/images/young-woman-in-mauve.jpg" alt="' . esc_attr__( '&#8220;Young Woman in Mauve&#8221; by Berthe Morisot', 'mjwedding' ) . '"/></figure>
+					<!-- wp:image {"sizeSlug":"large","className":"alignfull size-full is-style-MJWedding-border"} -->
+					<figure class="wp-block-image size-large alignfull size-full is-style-MJWedding-border"><img src="' . esc_url( get_template_directory_uri() ) . '/assets/images/young-woman-in-mauve.jpg" alt="' . esc_attr__( '&#8220;Young Woman in Mauve&#8221; by Berthe Morisot', 'mjwedding' ) . '"/></figure>
 					<!-- /wp:image --></div>
 					<!-- /wp:column --></div>
 					<!-- /wp:columns -->
@@ -103,8 +103,8 @@ function mj_wedding_get_starter_content() {
 					<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
 					<!-- /wp:spacer -->
 
-					<!-- wp:cover {"overlayColor":"green","contentPosition":"center center","align":"wide","className":"is-style-mjwedding-border"} -->
-					<div class="wp-block-cover alignwide has-green-background-color has-background-dim is-style-mjwedding-border"><div class="wp-block-cover__inner-container"><!-- wp:spacer {"height":20} -->
+					<!-- wp:cover {"overlayColor":"green","contentPosition":"center center","align":"wide","className":"is-style-MJWedding-border"} -->
+					<div class="wp-block-cover alignwide has-green-background-color has-background-dim is-style-MJWedding-border"><div class="wp-block-cover__inner-container"><!-- wp:spacer {"height":20} -->
 					<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
 					<!-- /wp:spacer -->
 
@@ -119,13 +119,13 @@ function mj_wedding_get_starter_content() {
 					<!-- wp:columns -->
 					<div class="wp-block-columns"><!-- wp:column -->
 					<div class="wp-block-column"><!-- wp:paragraph -->
-					<p><a href="https://wordpress.org/support/article/mj_wedding/">' . esc_html_x( 'Read the Theme Documentation', 'Theme starter content', 'mjwedding' ) . '</a></p>
+					<p><a href="https://wordpress.org/support/article/mjwedding/">' . esc_html_x( 'Read the Theme Documentation', 'Theme starter content', 'mjwedding' ) . '</a></p>
 					<!-- /wp:paragraph --></div>
 					<!-- /wp:column -->
 
 					<!-- wp:column -->
 					<div class="wp-block-column"><!-- wp:paragraph -->
-					<p><a href="https://wordpress.org/support/theme/mjwedding/">' . esc_html_x( 'Check out the Support Forums', 'Theme starter content', 'mjwedding' ) . '</a></p>
+					<p><a href="https://wordpress.org/support/theme/MJWedding/">' . esc_html_x( 'Check out the Support Forums', 'Theme starter content', 'mjwedding' ) . '</a></p>
 					<!-- /wp:paragraph --></div>
 					<!-- /wp:column --></div>
 					<!-- /wp:columns -->
@@ -180,5 +180,5 @@ function mj_wedding_get_starter_content() {
 	 *
 	 * @param array $starter_content Array of starter content.
 	 */
-	return apply_filters( 'mj_wedding_starter_content', $starter_content );
+	return apply_filters( 'mjwedding_starter_content', $starter_content );
 }
