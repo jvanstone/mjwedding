@@ -26,6 +26,13 @@ const styleSRC = './assets/sass/style.scss';
 // Path to place the compiled CSS file. Default set to root folder.
 const styleDestination = './';
 
+// Path to main editor-style.scss file.
+//const styleSRC = './assets/sass/style-editor.scss';
+
+// Path to place the compiled editor-style CSS file. Default set to root folder.
+//const styleDestination = './assets/css/';
+
+
 // Available options → 'compact' or 'compressed' or 'nested' or 'expanded'
 const outputStyle = 'compact';
 const errLogToConsole = true;
