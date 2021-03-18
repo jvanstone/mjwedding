@@ -158,7 +158,7 @@ a:hover{-webkit-text-decoration-style:dotted;text-decoration-style:dotted;-webki
 .wp-block-columns.is-style-MJWedding-columns-overlap{position:relative;-ms-flex-pack:distribute;justify-content:space-around}
 .wp-block-columns.alignfull{position:relative}
 .wp-block-columns.alignfull .wp-block-column p:not(.has-background),.wp-block-columns.alignfull .wp-block-column h1:not(.has-background),.wp-block-columns.alignfull .wp-block-column h2:not(.has-background),.wp-block-columns.alignfull .wp-block-column h3:not(.has-background),.wp-block-columns.alignfull .wp-block-column h4:not(.has-background),.wp-block-columns.alignfull .wp-block-column h5:not(.has-background),.wp-block-columns.alignfull .wp-block-column h6:not(.has-background){padding-left:var(--global--spacing-unit);padding-right:var(--global--spacing-unit)}
-.wp-block-columns .z-above{margin-top:2rem !important;position:relative !important;z-index:9 !important}
+.wp-block-columns .z-above{margin-top:4rem !important;position:relative !important;z-index:9 !important}
 .wp-block-columns .z-below{z-index:-1 !important}
 .wp-block-cover,.wp-block-cover-image{background-color:var(--cover--color-background);min-height:var(--cover--height);margin-top:inherit;margin-bottom:inherit}
 .wp-block-cover:not(.alignwide):not(.alignfull),.wp-block-cover-image:not(.alignwide):not(.alignfull){clear:both}

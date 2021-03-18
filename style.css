@@ -8,7 +8,7 @@ Description: M & J Wedding is a blank canvas for your Wedding website. M & J Wed
 Requires at least: 5.3
 Tested up to: 5.6
 Requires PHP: 5.6
-Version: 1.0.4
+Version: 1.0.5
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: mjwedding
@@ -473,7 +473,7 @@ a:hover { -webkit-text-decoration-style: dotted; text-decoration-style: dotted; 
 
 .wp-block-columns.alignfull .wp-block-column p:not(.has-background), .wp-block-columns.alignfull .wp-block-column h1:not(.has-background), .wp-block-columns.alignfull .wp-block-column h2:not(.has-background), .wp-block-columns.alignfull .wp-block-column h3:not(.has-background), .wp-block-columns.alignfull .wp-block-column h4:not(.has-background), .wp-block-columns.alignfull .wp-block-column h5:not(.has-background), .wp-block-columns.alignfull .wp-block-column h6:not(.has-background) { padding-left: var(--global--spacing-unit); padding-right: var(--global--spacing-unit); }
 
-.wp-block-columns .z-above { margin-top: 2rem !important; position: relative !important; z-index: 9 !important; }
+.wp-block-columns .z-above { margin-top: 4rem !important; position: relative !important; z-index: 9 !important; }
 
 .wp-block-columns .z-below { z-index: -1 !important; }
 
