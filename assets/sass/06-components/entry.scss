@@ -51,9 +51,9 @@ h1.entry-title {
 		word-wrap: break-word;
 	}
 
-	.small-caps { 
-		font-variant: small-caps !important;
-		font-feature-settings: 'tnum' on, 'onum' on !important;
+	.small-caps {   
+		font-size: smaller;
+    text-transform: uppercase;
 	}
 
 	// Overwrite iframe embeds that have inline styles.

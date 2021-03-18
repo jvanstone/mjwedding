@@ -480,7 +480,7 @@ a.custom-logo-link{text-decoration:none}
 h1.entry-title{line-height:var(--heading--line-height-h1);font-weight:var(--heading--font-weight-page-title)}
 .entry-content,.entry-summary{font-family:var(--entry-content--font-family)}
 .entry-content p{margin-top:1.2rem;font-family:var(--entry-content--font-family);word-wrap:break-word}
-.entry-content .small-caps{font-variant:small-caps !important;-webkit-font-feature-settings:'tnum' on,'onum' on !important;font-feature-settings:'tnum' on,'onum' on !important}
+.entry-content .small-caps{font-size:smaller;text-transform:uppercase}
 .entry-content>iframe[style]{margin:var(--global--spacing-vertical) auto !important;max-width:90% !important}
 .entry-footer{color:var(--global--color-primary);clear:both;float:none;font-size:var(--global--font-size-xs);display:block}
 .entry-footer>span{display:inline-block}
