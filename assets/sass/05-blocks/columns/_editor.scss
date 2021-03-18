@@ -65,4 +65,15 @@
 			padding-right: var(--global--spacing-unit);
 		}
 	}
+
+	.z-above { 
+		//width: 50%;
+		margin-top: 7rem!important;
+		position: relative!important;
+		z-index: 9!important;
+	}
+	
+	.z-below { 
+		z-index: -1 !important; 
+	}
 }
