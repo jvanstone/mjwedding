@@ -224,7 +224,7 @@ body:not(.single) .site-main > article:last-of-type .entry-footer {
 
 @include media(tablet) { 
 	
-	main {
+	main, article {
 		width: 750px;
 		min-height: 900px;
 		max-height: 100%;
