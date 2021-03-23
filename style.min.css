@@ -774,7 +774,7 @@ main{min-width:750px;min-height:500px;max-height:100%;padding-left:calc(1 * var(
 .post-navigation .nav-links{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
 }@media only screen and (min-width:592px){.post-password-form__submit{margin-left:calc(0.4 * var(--global--spacing-horizontal))}
 .wp-block-media-text .wp-block-media-text__content{padding:var(--global--spacing-vertical)}
-main{width:750px;min-height:900px;max-height:100%;padding-bottom:4rem}
+main{width:750px;min-height:1000px;max-height:100%}
 article{min-height:900px;max-height:100%}
 .navigation .nav-links{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-ms-flex-wrap:wrap;flex-wrap:wrap}
 .navigation .nav-links .nav-next,.navigation .nav-links .nav-previous{-webkit-box-flex:0;-ms-flex:0 1 auto;flex:0 1 auto;margin-bottom:inherit;margin-top:inherit;max-width:calc(50% - (0.5 * var(--global--spacing-unit)))}
